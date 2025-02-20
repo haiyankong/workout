@@ -2272,6 +2272,22 @@
 "streak": 1
 },
 {
+"run_id": 13677584739,
+"name": "\u5348\u540e\u8dd1\u6b65",
+"distance": 5318.7,
+"moving_time": "0:38:44",
+"type": "Run",
+"start_date": "2025-02-13 09:20:27+00:00",
+"start_date_local": "2025-02-13 17:20:27",
+"location_country": "\u5965\u5ec9\u8fd0\u6d01, \u5965\u8fd0\u6751\u8857\u9053, \u671d\u9633\u533a, \u5317\u4eac\u5e02, 100192, \u4e2d\u56fd",
+"summary_polyline": "cefsFs|heUJIBEFATS?KHQBKFGNm@@iA`@gBJYHIDOAg@BM\\c@VeAJSj@q@d@Md@Qh@MVQh@Qb@Wt@s@h@u@\\WPULqAE]@[UoGFe@FuAA]Hg@A_@\\_BTy@R}A@_BBU@_AQgA_AyBOu@?gAVcA?c@OaACk@Z}BHYR_@X}@RQJCLBRJPTRl@HHTBP?ZMROb@UBI@EGo@a@{ACc@Qe@Ms@?a@@OF[KWc@OWi@QQSIIIu@UcAu@OGYEeAEQEO?IBeA@WBY?MEGKIEYAQ@_@Va@CuAJa@?uAKWBe@Ok@EY?QB[HSNQRWP{@nAy@h@o@Ns@@]KWWWGEEYc@Ou@a@o@IUOSWS]]UM]GW@a@DSFk@`@m@TWN_@b@QVIDODa@BCAi@@OJCJ?j@a@bAi@jC]j@Ep@Ip@a@jAEh@ITSbAWf@Cv@RzAKzBD|@?rAD`@J`@B`@Pl@@b@DTL|D?bACj@BzBKhCGh@IJIVMtAG~@?~Ab@bDJTZf@Tj@HLZ\\VT^l@XRd@n@TRNR`@dAJ^L`AJ^D^DPNdDFl@h@zCT`@FT`@f@r@jATNPPt@|ALPjA~@r@`@VDRAVHPEXCZMPCj@o@NEb@Ed@ULMTc@JYb@k@P]Z{@Xi@Nc@R_@NCP?Zh@^d@NJNFPRPJh@l@n@f@PZHF",
+"average_heartrate": 161.6,
+"average_speed": 2.289,
+"elevation_gain": 19.6,
+"source": "strava",
+"streak": 1
+},
+{
 "run_id": 13615707009,
 "name": "Afternoon Run",
 "distance": 5277.1,
@@ -2300,6 +2316,22 @@
 "average_heartrate": 157.6,
 "average_speed": 2.135,
 "elevation_gain": 25.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 13677442696,
+"name": "Indoor Running",
+"distance": 3897.1,
+"moving_time": "0:31:34",
+"type": "Run",
+"start_date": "2025-02-20 11:13:01+00:00",
+"start_date_local": "2025-02-20 19:13:01",
+"location_country": "China",
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 2.058,
+"elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
 }
