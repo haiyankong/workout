@@ -2334,5 +2334,21 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 13686459024,
+"name": "Indoor Running",
+"distance": 2010.0,
+"moving_time": "0:31:09",
+"type": "Run",
+"start_date": "2025-02-21 11:05:00+00:00",
+"start_date_local": "2025-02-21 19:05:00",
+"location_country": "China",
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 1.075,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 2
 }
 ]
