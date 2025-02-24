@@ -2350,5 +2350,21 @@
 "elevation_gain": 243.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 13712694339,
+"name": "Treadmill Incline Running",
+"distance": 1630.0,
+"moving_time": "0:21:03",
+"type": "Run",
+"start_date": "2025-02-24 10:02:00+00:00",
+"start_date_local": "2025-02-24 18:02:00",
+"location_country": "China",
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 1.291,
+"elevation_gain": 131.0,
+"source": "strava",
+"streak": 2
 }
 ]
