@@ -75,6 +75,7 @@ const SNOWBOARD_TITLE = IS_CHINESE ? '单板滑雪' : 'Snowboard';
 const SKI_TITLE = IS_CHINESE ? '双板滑雪' : 'Ski';
 const ROAD_TRIP_TITLE = IS_CHINESE ? '自驾' : 'RoadTrip';
 const FLIGHT_TITLE = IS_CHINESE ? '飞行' : 'Flight';
+const WORKOUT_TITLE = IS_CHINESE ? '无氧训练' : 'Workout'; // khy add 20250224
 
 const RUN_TITLES = {
   FULL_MARATHON_RUN_TITLE,
@@ -93,6 +94,7 @@ const RUN_TITLES = {
   FLIGHT_TITLE,
   SNOWBOARD_TITLE,
   SKI_TITLE,
+  WORKOUT_TITLE, // khy add 20250224
 };
 
 export {
@@ -144,6 +146,7 @@ export const ROWING_COLOR = nike;
 export const ROAD_TRIP_COLOR = nike;
 export const FLIGHT_COLOR = nike;
 export const KAYAKING_COLOR = nike;
+export const WORKOUT_COLOR = nike; // khy add 20250224
 export const PROVINCE_FILL_COLOR = '#47b8e0';
 export const COUNTRY_FILL_COLOR = dark_vanilla;
 export const SNOWBOARD_COLOR = dark_vanilla;
