@@ -1,6 +1,10 @@
-Forked from [yihong0618](https://github.com/yihong0618)/[running_page](https://github.com/yihong0618/running_page) and [ben-29](https://github.com/ben-29)/[workouts_page](https://github.com/ben-29/workouts_page).
+# Forked
 
-# 同步数据
+- [yihong0618](https://github.com/yihong0618)/[running_page](https://github.com/yihong0618/running_page)
+
+- [ben-29](https://github.com/ben-29)/[workouts_page](https://github.com/ben-29/workouts_page)
+
+# 基本设置
 
 ## 1 创建仓库
 
@@ -79,9 +83,7 @@ pnpm develop
 
 # 进一步修改
 
-`...\.github\workflows\gh-pages.yml`
-
-- 确认是否需要修改分支名，# if your default branches is not master, please change it here
+`...\.github\workflows\gh-pages.yml`，确认是否需要修改分支名，# if your default branches is not master, please change it here
 
 `...\.github\workflows\run_data_sync.yml`，修改，但是不要删除任何行
 
@@ -91,7 +93,7 @@ pnpm develop
 
 `.gitignore`的内容也要注意修改
 
-# 仓库准备
+# 仓库设置
 
 ## Settings---Secrets and variables---Action---Repository secrets
 
@@ -109,7 +111,7 @@ STRAVA_CLIENT_REFRESH_TOKEN
 
 select Read and write permissions
 
-## Settings---Pages
+## Settings---Pages---Build and deployment----Source
 
 select GitHub Actions
 
@@ -119,12 +121,12 @@ Run Data Sync---Run workflow
 
 # 更新数据
 
-更新数据
+新数据
 
-- 仓库每天自动更新，不需要手动更新（手动更新的方式：Action---Run Data Sync --- Run workflow）
+- 手动更新的方式：Action---Run Data Sync---Run workflow
 
-更新旧数据
+- 仓库已经设置每周自动更新，不需要再手动更新。
 
-- 删除 `...\src\static\activities.json` 和 `...\run_page\data.db`
+旧数据
 
-- 然后 Action---Run Data Sync --- Run workflow
+- 删除 `...\src\static\activities.json` 和 `...\run_page\data.db` 后，Action---Run Data Sync---Run workflow

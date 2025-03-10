@@ -14,9 +14,17 @@ const data: ISiteMetadataResult = {
   siteTitle: 'Workout',
   siteUrl: '/',
   logo: '',
-  description: 'My Workout',
+  description: 'Workout',
   keywords: 'workouts, running, cycling, riding, roadtrip, hiking, swimming',
   navLinks: [
+    {
+      name: 'Strava',
+      url: 'https://www.strava.com/athletes/149557983',
+    },
+    {
+      name: 'Repo',
+      url: 'https://github.com/haiyankong/workout',
+    },
   ],
 };
 
