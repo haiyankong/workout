@@ -2574,5 +2574,53 @@
 "elevation_gain": 314.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 13861176098,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "0:54:38",
+"type": "Workout",
+"start_date": "2025-03-12 09:35:00+00:00",
+"start_date_local": "2025-03-12 17:35:00",
+"location_country": "China",
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 13861188764,
+"name": "Treadmill Incline Running",
+"distance": 3060.0,
+"moving_time": "0:42:35",
+"type": "Run",
+"start_date": "2025-03-12 10:32:00+00:00",
+"start_date_local": "2025-03-12 18:32:00",
+"location_country": "China",
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 1.198,
+"elevation_gain": 330.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 13878535192,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "1:07:12",
+"type": "Workout",
+"start_date": "2025-03-14 08:00:00+00:00",
+"start_date_local": "2025-03-14 16:00:00",
+"location_country": "China",
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
 }
 ]
