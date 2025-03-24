@@ -2622,5 +2622,21 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 13943997158,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "1:01:08",
+"type": "Workout",
+"start_date": "2025-03-21 07:57:00+00:00",
+"start_date_local": "2025-03-21 15:57:00",
+"location_country": "China",
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
 }
 ]
