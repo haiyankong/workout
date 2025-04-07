@@ -2702,5 +2702,37 @@
 "elevation_gain": 291.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 14056502105,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "1:19:13",
+"type": "Workout",
+"start_date": "2025-04-02 08:20:14+00:00",
+"start_date_local": "2025-04-02 16:20:14",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 14084152744,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "1:21:08",
+"type": "Workout",
+"start_date": "2025-04-05 06:57:01+00:00",
+"start_date_local": "2025-04-05 14:57:01",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
 }
 ]
