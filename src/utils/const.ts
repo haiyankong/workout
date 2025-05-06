@@ -119,7 +119,7 @@ export {
 
 
 // change the main color change here /src/components/Layout
-const yellow = 'rgb(224,237,94)';
+const yellow = '#0018ED';
 const green = 'rgb(0,237,94)';
 const pink = 'rgb(237,85,219)';
 const cyan = 'rgb(112,243,255)';
@@ -130,7 +130,7 @@ const purple = 'rgb(154,118,252)';
 const veryPeri = 'rgb(105,106,173)';
 const red = 'rgb(255,0,0)';
 const lightred = 'rgb(244, 67, 54)';
-const nike = 'rgb(224,237,94)';
+const nike = '#0018ED';
 const bluegreen = '#0A6267';
 
 // If your map has an offset please change this line

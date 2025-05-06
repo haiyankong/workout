@@ -31,7 +31,7 @@
   margin: 2rem 0 5rem 0;
 
   :is(thead) {
-    color: rgb(224,237,94);
+    color: #0018ED;
     text-align: right;
 
     :is(th) {
@@ -68,5 +68,5 @@
 }
 
 .runDate {
-  color: rgb(224,237,94);
+  color: #0018ED;
 }
