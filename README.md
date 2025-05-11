@@ -3,7 +3,6 @@
 ## Original repo
 
 - [yihong0618](https://github.com/yihong0618)/[running_page](https://github.com/yihong0618/running_page)
-
 - [ben-29](https://github.com/ben-29)/[workouts_page](https://github.com/ben-29/workouts_page)
 
 ## 抄作业
@@ -183,7 +182,7 @@ Run Data Sync---Run workflow
 
 - 手动更新的方式：Action---Run Data Sync---Run workflow
 
-- 但是仓库已经设置每周自动更新，不需要再手动更新。
+- 但是仓库已经设置每周自动更新，不需要再手动更新
 
 旧数据
 
