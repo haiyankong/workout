@@ -119,7 +119,7 @@ export {
 
 
 // change the main color change here /src/components/Layout
-const yellow = '#0018ED';
+const yellow = 'rgb(224,237,94)';
 const green = 'rgb(0,237,94)';
 const pink = 'rgb(237,85,219)';
 const cyan = 'rgb(112,243,255)';
