@@ -120,7 +120,7 @@ pnpm develop
 ### 配色样式
 - 整个页面的底色：`src\components\Layout\style.module.css` 的 `background-color`
 - 轨迹颜色，直接将所有类型的轨迹颜色设置为了一种颜色 `nike`，另外，左侧栏运动数据汇总的颜色也是 `nike`：`src\utils\const.ts`
-- 地图 light/dark 模式：src\components\RunMap\index.tsx，`mapStyle="mapbox://styles/mapbox/dark-v10"` 或者 `mapStyle="mapbox://styles/mapbox/light-v10"`
+- 地图 light/dark 模式：`src\components\RunMap\index.tsx`，`mapStyle="mapbox://styles/mapbox/dark-v10"` 或者 `mapStyle="mapbox://styles/mapbox/light-v10"`
 - 地图中，左上角年份的颜色 `button`，选中地图中左上角某一年份后的颜色 `selected`、选中左上角某一年份或者表格内某一行数据后地图左下角的文字颜色 `runTitle`：`src\components\RunMap\style.module.css`
 - 表格中，表头的颜色 `runTable`，选中表格内某一行数据后该行数据的颜色 `selected`，日期时间的颜色 `runDate`：`src\components\RunTable\style.module.css`
 - 左上角标题和左侧栏内容之间 hr 的颜色：`src\components\YearsStat\index.tsx`
