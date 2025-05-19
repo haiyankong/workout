@@ -2958,5 +2958,53 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 14464879993,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "0:39:42",
+"type": "Workout",
+"start_date": "2025-05-13 09:36:42+00:00",
+"start_date_local": "2025-05-13 17:36:42",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 14486624721,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "1:02:56",
+"type": "Workout",
+"start_date": "2025-05-15 09:00:42+00:00",
+"start_date_local": "2025-05-15 17:00:42",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 14515876571,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "1:07:49",
+"type": "Workout",
+"start_date": "2025-05-18 07:56:40+00:00",
+"start_date_local": "2025-05-18 15:56:40",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
 }
 ]
