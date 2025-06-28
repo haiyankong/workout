@@ -3134,5 +3134,53 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 14909414313,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "1:01:09",
+"type": "Workout",
+"start_date": "2025-06-25 08:30:50+00:00",
+"start_date_local": "2025-06-25 16:30:50",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 14930265015,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "0:58:46",
+"type": "Workout",
+"start_date": "2025-06-27 09:01:04+00:00",
+"start_date_local": "2025-06-27 17:01:04",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 14936625632,
+"name": "\u7ec8\u4e8e\u548c\u6559\u7ec3\u59d0\u4e00\u5757\u8dd1\u4e0a\u6b65\u4e86\ud83d\ude2d",
+"distance": 5344.8,
+"moving_time": "0:32:24",
+"type": "Run",
+"start_date": "2025-06-27 22:46:23+00:00",
+"start_date_local": "2025-06-28 06:46:23",
+"location_country": "\u901f\u6ed1\u9986\u5357\u8def, \u5965\u8fd0\u6751\u8857\u9053, \u671d\u9633\u533a, \u5317\u4eac\u5e02, 100192, \u4e2d\u56fd",
+"summary_polyline": "q{esFkvgeUFYAOECCSAWJICCBO?_@ES?{@BEDa@BGFKTSHOPq@Bk@AoAC[@]Y}BKg@S[Qe@Wa@O_@WYOWg@a@QUm@i@u@w@e@o@WUQWESDQZe@La@Z_@To@BWBg@LgA?a@DSb@u@Rk@\\k@P_@`@g@\\OZ[VO`Bi@tAq@`@i@PQb@s@Z_@Re@E{ADm@Ey@G_@@y@OiABoB@ILW?g@HgALe@Tk@RkAH_A@i@CgBMaCo@uBSg@Ge@@o@Fg@Rs@AYG{@Bq@Go@Dq@L}@Ps@JO^WHAJ@THd@b@Zl@JHLBHCLITYNOb@KBM?m@Ms@{@cDKy@Da@?KGWKKe@YY]KS]_@aAW[Og@OoB]U@_@PMBi@Gm@AWEw@DYEqCAe@EQ@OC]Fi@M[?e@EU@WHYRoA|AOLW^i@h@OD}@Bu@Ow@m@OUs@oBSQWa@UUUMc@IYB_@Jc@D_@J]Pk@d@_@R_@ZgA@SFIFGNE\\B^C^O`@Mz@Yl@O~@Uj@a@vAM~AU`@ERIh@GLEDCAI]CD^zD?d@OpABxCLp@Hp@H`@FhAFh@FvB?l@FvA?nAO|AIfBYhBMzAAnAM`@\\nAJjA@BJ@FMDAJB~@hARz@Rl@jAdBbAlBT`Ab@hAHj@BfAFx@C`@?^z@hECFSB^RvAdBl@d@LX@RFV",
+"average_heartrate": 168.0,
+"average_speed": 2.749,
+"elevation_gain": 19.5,
+"source": "strava",
+"streak": 2
 }
 ]
