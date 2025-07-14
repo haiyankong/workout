@@ -3214,5 +3214,37 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 15068774570,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "1:48:24",
+"type": "Workout",
+"start_date": "2025-07-10 12:18:18+00:00",
+"start_date_local": "2025-07-10 20:18:18",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 15079493308,
+"name": "Evening Run",
+"distance": 2994.5,
+"moving_time": "0:20:36",
+"type": "Run",
+"start_date": "2025-07-11 12:03:27+00:00",
+"start_date_local": "2025-07-11 20:03:27",
+"location_country": "\u9152\u4ed9\u6865\u8857\u9053, \u59da\u6751\u9547, \u6d4e\u5b81\u5e02, \u5c71\u4e1c\u7701, 273105, \u4e2d\u56fd",
+"summary_polyline": "apnxEqmphUDDABQ\\MLENFt@ANFxACN@l@Ft@?tALvCAt@Jx@FzABzA@jAHlBB|ADn@?hAJr@DjDJnBFh@?f@Lv@JvAH\\F~@p@tBRf@l@fAJ\\d@fAd@r@d@dAV`@x@vBXd@Jd@NTPn@^v@j@hBNTXt@X~@b@z@f@rAXl@j@fB@t@FXDHJFCs@SYUAECGWE_@Oq@EUSm@KWOk@]s@I][m@o@cBc@}@g@uAOUk@{AUg@Me@]{@c@y@K[[q@i@_A_@u@Uq@e@iAOk@_@eA[cB]oD?w@Ei@@a@GcA?aAKqBIsC?o@DS?]I_BOqACgB",
+"average_heartrate": 152.3,
+"average_speed": 2.423,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 2
 }
 ]
