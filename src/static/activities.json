@@ -3358,5 +3358,37 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 15630582411,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "0:33:08",
+"type": "Workout",
+"start_date": "2025-08-29 21:18:57+00:00",
+"start_date_local": "2025-08-30 05:18:57",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 15643183452,
+"name": "Evening Run",
+"distance": 4815.1,
+"moving_time": "0:29:41",
+"type": "Run",
+"start_date": "2025-08-30 23:37:31+00:00",
+"start_date_local": "2025-08-30 19:37:31",
+"location_country": "522, King Street, Shandon, Columbia, Richland County, \u5357\u5361\u7f57\u6765\u7eb3\u5dde / \u5357\u5361\u7f85\u840a\u7d0d\u5dde, 29205, \u7f8e\u5229\u575a\u5408\u4f17\u56fd / \u7f8e\u5229\u5805\u5408\u773e\u570b",
+"summary_polyline": "qynnEbwlmNHFA@D@HF\\@@AND@J@^Cb@EJCXCl@UxDAfCOrC@~@CbDCxAEj@A`ACVAf@Ej@Az@Ef@GZAt@Ix@CJIF{@\\mDfAGCCSDuAFaAAgADaBA}@J_A@g@HiCNsBC}@Bq@Au@FmBHM|@]DEBKI]?MDS_@m@Ka@GqACgB@GRUHo@FUDA|@ANFZErBRBJCrAKnB@b@El@@`AE`@?b@C\\ErBQRKNFh@HxBC`@ChBCd@@v@I~@?dAE^Av@Gn@?|@Gz@EJGD_Bd@c@P]Dy@\\SBC?EGC]L_CCe@?}@BULk@BuADg@EgBDaDF}@F[Ai@DyABk@F_@CSBo@A_@BeAHs@By@@_BD_CBGHCp@Jd@G\\@fANVRb@HBDAXK`@@\\Cn@FnAGh@MfECj@CbCO|BCnEIdAGzCGl@C|BGNQHiFvAGCCOJsCGmA@O@DDWBg@ASDk@?iACm@JmA@{AFy@AiADs@BeAJcARc@BKMcBPi@?MEU@M",
+"average_heartrate": 176.9,
+"average_speed": 2.704,
+"elevation_gain": 50.0,
+"source": "strava",
+"streak": 1
 }
 ]
