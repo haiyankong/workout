@@ -3390,5 +3390,21 @@
 "elevation_gain": 50.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 15689671918,
+"name": "Morning Run",
+"distance": 1258.3,
+"moving_time": "0:08:04",
+"type": "Run",
+"start_date": "2025-09-03 13:17:06+00:00",
+"start_date_local": "2025-09-03 09:17:06",
+"location_country": "2401, Blossom Street, Shandon, Columbia, Richland County, \u5357\u5361\u7f57\u6765\u7eb3\u5dde / \u5357\u5361\u7f85\u840a\u7d0d\u5dde, 29205, \u7f8e\u5229\u575a\u5408\u4f17\u56fd / \u7f8e\u5229\u5805\u5408\u773e\u570b",
+"summary_polyline": "ydonEjhnmNaAZYFsBr@IFKRk@DQNu@JGBAFQPQLSCmAb@@LJX@XBFCJFp@HRDDDNA??NBTHJDXJNNz@Tn@At@Lr@R`AZ|@Jj@Tl@Df@Ld@DZJVH`@Fd@d@pB",
+"average_heartrate": 157.5,
+"average_speed": 2.6,
+"elevation_gain": 13.7,
+"source": "strava",
+"streak": 1
 }
 ]
