@@ -3438,5 +3438,37 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 15899939878,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "0:56:52",
+"type": "Workout",
+"start_date": "2025-09-22 15:27:41+00:00",
+"start_date_local": "2025-09-22 11:27:41",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 15958321413,
+"name": "Evening Run",
+"distance": 5496.4,
+"moving_time": "0:35:55",
+"type": "Run",
+"start_date": "2025-09-27 22:01:47+00:00",
+"start_date_local": "2025-09-27 18:01:47",
+"location_country": "2488, Blossom Street, Shandon, Columbia, Richland County, \u5357\u5361\u7f57\u6765\u7eb3\u5dde / \u5357\u5361\u7f85\u840a\u7d0d\u5dde, 29205, \u7f8e\u5229\u575a\u5408\u4f17\u56fd / \u7f8e\u5229\u5805\u5408\u773e\u570b",
+"summary_polyline": "w_onErwlmNHApADTFX@`@HX@t@LDDBHBB^?l@JbCL@FGfA@^GlGIj@@j@StF?r@GdA?`AQbF@~@CLIHo@VYRKJkAl@e@PYD}@`@c@JiBp@e@NI@KMAUH}AFm@CqBSe@CYRaCA{@B_@BK?OHKZSBGYmA?c@Ec@?iAFgBDk@FWAyAHqA?]BS?aADaA@mABi@BGXQd@@VBv@AbAPp@FFDFNJFfBD|AP@HEx@@nDEjA@~@I`AA`AEh@?pAGjAAnAGfAGf@AnCCd@?t@Er@u@\\_@XWV[P[VULIBO?MBaAh@]J}@PcBl@IAEG?SHeCGaBDw@?c@Iw@J_AE_AL{BAa@D_AJk@CuBBwA?GCCYACC?IL_BFYHOHcA@w@PkA@UCi@@SJw@RUHATFX?XD`@Ez@Jx@@JBFLHDr@Fv@Rp@Dp@A@D@TA|@Ep@@dBK`BBn@Gn@MrDCtDIh@G~@CxDE|@?r@CDg@Pk@^WXw@Zc@Xq@LaE|Ag@L",
+"average_heartrate": 171.8,
+"average_speed": 2.551,
+"elevation_gain": 66.2,
+"source": "strava",
+"streak": 1
 }
 ]
