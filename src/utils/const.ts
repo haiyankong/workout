@@ -131,7 +131,7 @@ const purple = 'rgb(154,118,252)';
 const veryPeri = 'rgb(105,106,173)';
 const red = 'rgb(255,0,0)';
 const lightred = 'rgb(244, 67, 54)';
-const nike = '#0018ED';
+const nike = '#024A71';
 const bluegreen = '#0A6267';
 
 // If your map has an offset please change this line
