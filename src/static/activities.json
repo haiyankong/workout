@@ -3534,5 +3534,21 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 16687716774,
+"name": "Strength Training and Stretching",
+"distance": 0.0,
+"moving_time": "1:01:44",
+"type": "Workout",
+"start_date": "2025-12-08 19:14:07+00:00",
+"start_date_local": "2025-12-08 14:14:07",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
 }
 ]
