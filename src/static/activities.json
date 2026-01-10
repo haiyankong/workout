@@ -3566,5 +3566,37 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 17006061249,
+"name": "\u27540\ufe0f\u20e32\ufe0f\u20e36\ufe0f\u20e3\ud83d\ude05",
+"distance": 6242.2,
+"moving_time": "0:48:05",
+"type": "Run",
+"start_date": "2026-01-10 22:06:08+00:00",
+"start_date_local": "2026-01-10 17:06:08",
+"location_country": "575, King Street, Shandon, Columbia, Richland County, \u5357\u5361\u7f57\u6765\u7eb3\u5dde;\u5357\u5361\u7f85\u840a\u7d0d\u5dde, 29205, \u7f8e\u56fd;\u7f8e\u570b",
+"summary_polyline": "k}nnEzwlmNd@Il@@|ATJFFH?\\IhA?jAE|D@RFHLFj@B~A@xDLp@?JCFEFQDmA\\aBFq@?OIg@@SJc@GqBB{AAk@FeA@eBHkBFsCJ_ILiBBwBE[EKIE]IyAG_AIcA?cCMuAUY?YHK?kBQMFGPMlDMhEDPHHXFV?z@C`@@bF^hBBjANp@Dn@@HCFEBODeADcD^eHLaA^aAFa@BmBHwALoGPeCEg@@mAL}A?uBBYAnAOxEEZGJWHi@DaAGsAOgDAUGGOLkCAuCFwAESIIQEW@e@DU?yC]k@CO@IDINE`@AvABrAQrDB_CDw@BuCJsA?eARoFGoDOaBA}Ed@eGTkBJwAReBEZ[r@I\\@hB_@|F?JDFNDv@JzBHlCXvBHdBJ~ABnCVHAFEHQPiC@e@Eg@LqAL}CAUEKMGSC{Hg@kAEMBGDGJEZ?fAItACdAAnBKbB?V",
+"average_heartrate": 171.1,
+"average_speed": 2.164,
+"elevation_gain": 35.3,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 17006077065,
+"name": "\uff08\u52a0\u4e0a\u8fd9\u6bb5\u662f\uff092\ufe0f\u20e30\ufe0f\u20e32\ufe0f\u20e3 6\ufe0f\u20e3",
+"distance": 305.3,
+"moving_time": "0:01:59",
+"type": "Run",
+"start_date": "2026-01-10 23:13:16+00:00",
+"start_date_local": "2026-01-10 18:13:16",
+"location_country": "503, King Street, Shandon, Columbia, Richland County, \u5357\u5361\u7f57\u6765\u7eb3\u5dde;\u5357\u5361\u7f85\u840a\u7d0d\u5dde, 29205, \u7f8e\u56fd;\u7f8e\u570b",
+"summary_polyline": "exnnEhxlmNAH?CEEWGgAGwAQi@DWLM^I~@C|@DtAElA",
+"average_heartrate": 159.1,
+"average_speed": 2.566,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
 }
 ]
