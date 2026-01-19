@@ -3598,5 +3598,21 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 17105911374,
+"name": "Congaress National Park",
+"distance": 3637.9,
+"moving_time": "0:44:12",
+"type": "Run",
+"start_date": "2026-01-19 16:22:56+00:00",
+"start_date_local": "2026-01-19 11:22:56",
+"location_country": "Boardwalk Loop, Richland County, \u5357\u5361\u7f57\u6765\u7eb3\u5dde;\u5357\u5361\u7f85\u840a\u7d0d\u5dde, \u7f8e\u56fd;\u7f8e\u570b",
+"summary_polyline": "g`nmEhwhlN@A?BPk@NWNK?Q@GDCCc@DYAa@G[Oa@MKYg@YQSUSGSOY]COEEBSEYGAIYMOOWMOOKGUa@c@GKECSUOa@?E@AWg@MSa@sAECGU@WAi@B]BK\\e@RIX?HER@ZCH@^?XE@EXBJHb@H`@EN@TCh@@REd@@B@@AF?XEf@CF??BRC?DFC\\BBDTDJXH?PHHFC@@DPJJT`@L`@RLB\\APFX@XNp@JLLFATFn@QNCx@[PCBACCBOFBLER?\\Md@Wd@KR?p@IFHJFTONIH@XC\\YHAZKZ?VIb@Ad@G@CJBG@UACF@BCCOHWF?BHHBVCr@U|AFPBZBdAJf@@PB@JKB@AEABPHBFJ@CACNC?CFI?BAGBM?KL@BIBDCFFFNBRAV@BMb@@LEJ@hAIf@SRAF]IYHGECDAGa@?ECIF?HMFELSDg@VECK?MBKCy@?OB?BKGSCGIOIM?KCOACAYAWKYCKG]KEGOCWGc@Sc@?UDKA_@QQCm@q@Om@?GKWAOGg@@IIe@EOMM@OAGGEG@IKe@U@CEGQI?C_@e@EMEEGAMIGICBEEGBQGg@JYBUDOLk@Hk@ZOB]NM@KHWHcAPUH[ABHBTJNADNLFdAA`@E^AXBvAANBZ?n@Mb@@LCPBLKhADz@CNFNFD?HFPALHb@AHW`@C\\_@ZADF@@D@@COHBBCUCIBMMAGEC@?AGA@BDC@BFEC?KLKEIABHMBB?A",
+"average_heartrate": 111.7,
+"average_speed": 1.372,
+"elevation_gain": 5.8,
+"source": "strava",
+"streak": 1
 }
 ]
