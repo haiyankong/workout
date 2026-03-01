@@ -1,4 +1,4 @@
-httpx>=0.15.0,<=0.15.5
+httpx>=0.24.0
 gpxpy==1.4.2
 stravalib==0.10.4
 appdirs>=1.4.0
@@ -28,10 +28,6 @@ haversine==2.8.0
 garth
 pycryptodome
 duckdb
-
-
 bs4
-html.parser
-aiofiles
 # if you need to import kml file
 #fastkml
