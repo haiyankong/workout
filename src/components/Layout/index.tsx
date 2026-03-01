@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import useSiteMetadata from '@/hooks/useSiteMetadata';
 import styles from './style.module.css';
 
@@ -9,7 +10,7 @@ const Layout = ({ children }: React.PropsWithChildren) => {
   const { siteTitle, description, keywords } = useSiteMetadata();
 
   return (
-    <>
+    <div className="bg-background min-h-screen flex flex-col font-sans text-primary">
       <Helmet bodyAttributes={{ class: styles.body }}>
         <html lang="en" />
         <title>{siteTitle}</title>
@@ -21,10 +22,11 @@ const Layout = ({ children }: React.PropsWithChildren) => {
         />
       </Helmet>
       <Header />
-      <div className="mb-16 p-4 lg:flex lg:p-16">
+      <main className="flex-grow w-full max-w-[1400px] mx-auto p-4 md:p-8">
         {children}
-      </div>
-    </>
+      </main>
+      <Footer />
+    </div>
   );
 };
 
