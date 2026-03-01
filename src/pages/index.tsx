@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import Layout from '@/components/Layout';
-import MonthlyBarChart from '@/components/MonthlyBarChart';
 import RunMap from '@/components/RunMap';
 import RunTable from '@/components/RunTable';
 import SVGStat from '@/components/SVGStat';
@@ -148,7 +147,18 @@ const Index = () => {
   return (
     <Layout>
       <div className="lg:flex lg:gap-8 lg:items-start">
-        {/* Left: Year buttons + Table */}
+        {/* Left: Map */}
+        <div className="w-full lg:w-2/5">
+          <RunMap
+            title={title}
+            viewState={viewState}
+            geoData={geoData}
+            setViewState={setViewState}
+            changeYear={changeYear}
+            thisYear={year}
+          />
+        </div>
+        {/* Right: Year buttons + Table */}
         <div className="w-full lg:w-3/5">
           <div className="mb-4">
             <RunMapButtons changeYear={changeYear} thisYear={year} />
@@ -164,18 +174,6 @@ const Index = () => {
               setRunIndex={setRunIndex}
             />
           )}
-        </div>
-        {/* Right: Map + Monthly Chart */}
-        <div className="w-full lg:w-2/5">
-          <RunMap
-            title={title}
-            viewState={viewState}
-            geoData={geoData}
-            setViewState={setViewState}
-            changeYear={changeYear}
-            thisYear={year}
-          />
-          <MonthlyBarChart runs={runs} year={year} />
         </div>
       </div>
       {/* Enable Audiences in Vercel Analytics: https://vercel.com/docs/concepts/analytics/audiences/quickstart */}
