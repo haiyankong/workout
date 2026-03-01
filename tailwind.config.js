@@ -3,19 +3,20 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,css}'],
   theme: {
     fontFamily: {
-      sans: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        'Segoe UI',
-        'Roboto',
-        'Oxygen-Sans',
-        'Ubuntu',
-        'Cantarell',
-        'Helvetica Neue',
-        'sans-serif',
-      ],
+      sans: ['Inter', 'system-ui', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        background: '#000000',
+        card: '#1C1C1E',
+        primary: '#FFFFFF',
+        secondary: '#8E8E93',
+        accent: '#FF3B30',
+      },
+      borderRadius: {
+        card: '1rem',
+      },
+    },
   },
   plugins: [],
 };

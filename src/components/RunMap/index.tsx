@@ -43,6 +43,11 @@ const RunMap = ({
   thisYear,
 }: IRunMapProps) => {
   const { countries, provinces } = useActivities();
+  const FALLBACK_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
+  const [mapStyleUrl, setMapStyleUrl] = useState<string>(
+    MAPBOX_TOKEN ? 'mapbox://styles/mapbox/dark-v10' : FALLBACK_STYLE
+  );
+  const [mapLoaded, setMapLoaded] = useState(false);
   const mapRef = useRef<MapRef>();
   const [lights, setLights] = useState(PRIVACY_MODE ? false : LIGHTS_ON);
   const keepWhenLightsOff = ['runs2']
@@ -75,6 +80,15 @@ const RunMap = ({
           mapRef.current = ref;
           switchLayerVisibility(map, lights);
         });
+        map.on('load', () => {
+          setMapLoaded(true);
+        });
+        map.on('error', (e: any) => {
+          const msg = String(e?.error?.message || e?.message || '');
+          if (MAPBOX_TOKEN && (msg.includes('Unauthorized') || msg.includes('401') || msg.includes('403') || msg.includes('Forbidden') || msg.includes('Not Found'))) {
+            setMapStyleUrl(FALLBACK_STYLE);
+          }
+        });
       }
       if (mapRef.current) {
         const map = mapRef.current.getMap();
@@ -83,6 +97,18 @@ const RunMap = ({
     },
     [mapRef, lights]
   );
+  React.useEffect(() => {
+    if (!MAPBOX_TOKEN) return;
+    if (mapLoaded) return;
+    if (!mapStyleUrl.startsWith('mapbox://')) return;
+    const t = setTimeout(() => {
+      if (!mapLoaded) {
+        setMapStyleUrl(FALLBACK_STYLE);
+      }
+    }, 4000);
+    return () => clearTimeout(t);
+  }, [mapLoaded, mapStyleUrl]);
+
   const filterProvinces = provinces.slice();
   const filterCountries = countries.slice();
   // for geojson format
@@ -133,7 +159,7 @@ const RunMap = ({
       {...viewState}
       onMove={onMove}
       style={style}
-      mapStyle="mapbox://styles/mapbox/light-v11"
+      mapStyle={mapStyleUrl}
       ref={mapRefCallback}
       mapboxAccessToken={MAPBOX_TOKEN}
     >

@@ -18,25 +18,34 @@
   display: inline-block;
   position: relative;
   cursor: pointer;
-  padding: 1.3rem 0.4rem;
+  padding: 0.4rem;
+  margin-right: 0.4rem;
   margin-top: 0.1rem;
   font-size: 1rem;
   text-align: center;
-  color: #024A71;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+  border: 1px solid #e0ed5e;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .selected {
-  color: #EE3E35;
+  color: #000000;
+  background-color: #e0ed5e;
+  font-weight: bold;
 }
 
 .runTitle {
   height: 29px;
-  width: 710px;
+  width: min(710px, calc(100% - 140px));
   position: absolute;
   bottom: 0px;
   left: 120px;
   cursor: pointer;
-  color: #024A71;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .lights {

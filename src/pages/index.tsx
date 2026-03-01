@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import Layout from '@/components/Layout';
+import DashboardStats from '@/components/DashboardStats';
 import LocationStat from '@/components/LocationStat';
+import MonthlyBarChart from '@/components/MonthlyBarChart';
 import RunMap from '@/components/RunMap';
 import RunTable from '@/components/RunTable';
 import SVGStat from '@/components/SVGStat';
@@ -193,41 +195,47 @@ const Index = () => {
 
   return (
     <Layout>
-      <div className="w-full lg:w-1/4">
-        <h1 className="my-12 text-4xl font-extrabold italic">
-          <a>{siteTitle}</a>
-        </h1>
-        {(viewState.zoom ?? 0) <= 3 && IS_CHINESE ? (
-          <LocationStat
+      <DashboardStats />
+      <div className="lg:flex lg:gap-8 lg:items-start">
+        {/* Left: Calendar + Table */}
+        <div className="w-full lg:w-3/5">
+          <h1 className="my-12 text-4xl font-extrabold italic">
+            <a>{siteTitle}</a>
+          </h1>
+          {(viewState.zoom ?? 0) <= 3 && IS_CHINESE ? (
+            <LocationStat
+              changeYear={changeYear}
+              changeCity={changeCity}
+              changeType={changeType}
+              onClickTypeInYear={changeTypeInYear}
+            />
+          ) : (
+            <YearsStat year={year} onClick={changeYear} onClickTypeInYear={changeTypeInYear}/>
+          )}
+          {year === 'Total' ? (
+            <SVGStat />
+          ) : (
+            <RunTable
+              runs={runs}
+              locateActivity={locateActivity}
+              setActivity={setActivity}
+              runIndex={runIndex}
+              setRunIndex={setRunIndex}
+            />
+          )}
+        </div>
+        {/* Right: Map + Monthly Chart */}
+        <div className="w-full lg:w-2/5">
+          <RunMap
+            title={title}
+            viewState={viewState}
+            geoData={geoData}
+            setViewState={setViewState}
             changeYear={changeYear}
-            changeCity={changeCity}
-            changeType={changeType}
-            onClickTypeInYear={changeTypeInYear}
+            thisYear={year}
           />
-        ) : (
-          <YearsStat year={year} onClick={changeYear} onClickTypeInYear={changeTypeInYear}/>
-        )}
-      </div>
-      <div className="w-full lg:w-4/5">
-        <RunMap
-          title={title}
-          viewState={viewState}
-          geoData={geoData}
-          setViewState={setViewState}
-          changeYear={changeYear}
-          thisYear={year}
-        />
-        {year === 'Total' ? (
-          <SVGStat />
-        ) : (
-          <RunTable
-            runs={runs}
-            locateActivity={locateActivity}
-            setActivity={setActivity}
-            runIndex={runIndex}
-            setRunIndex={setRunIndex}
-          />
-        )}
+          <MonthlyBarChart runs={runs} year={year} />
+        </div>
       </div>
       {/* Enable Audiences in Vercel Analytics: https://vercel.com/docs/concepts/analytics/audiences/quickstart */}
       <Analytics />
