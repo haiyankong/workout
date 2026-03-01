@@ -27,13 +27,8 @@ const Header = () => {
         >
           <CyclingText
             ref={runRef}
-            text="RUN"
+            text="WORKOUT"
             className="inline-block group-hover:scale-105 origin-left transition-transform duration-300"
-            hoverPlay={true}
-          />
-          <CyclingText
-            text="COLIN"
-            className="text-primary inline-block group-hover:scale-105 origin-left transition-transform duration-300"
             hoverPlay={true}
           />
         </Link>
