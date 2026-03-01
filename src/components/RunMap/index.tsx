@@ -43,9 +43,9 @@ const RunMap = ({
   thisYear,
 }: IRunMapProps) => {
   const { countries, provinces } = useActivities();
-  const FALLBACK_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
+  const FALLBACK_STYLE = 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json';
   const [mapStyleUrl, setMapStyleUrl] = useState<string>(
-    MAPBOX_TOKEN ? 'mapbox://styles/mapbox/dark-v10' : FALLBACK_STYLE
+    MAPBOX_TOKEN ? 'mapbox://styles/mapbox/light-v11' : FALLBACK_STYLE
   );
   const [mapLoaded, setMapLoaded] = useState(false);
   const mapRef = useRef<MapRef>();

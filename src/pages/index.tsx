@@ -1,23 +1,16 @@
 import { useEffect, useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import Layout from '@/components/Layout';
-import DashboardStats from '@/components/DashboardStats';
-import LocationStat from '@/components/LocationStat';
 import MonthlyBarChart from '@/components/MonthlyBarChart';
 import RunMap from '@/components/RunMap';
 import RunTable from '@/components/RunTable';
 import SVGStat from '@/components/SVGStat';
-import YearsStat from '@/components/YearsStat';
 import useActivities from '@/hooks/useActivities';
-import useSiteMetadata from '@/hooks/useSiteMetadata';
-import { IS_CHINESE } from '@/utils/const';
+import RunMapButtons from '@/components/RunMap/RunMapButtons';
 import {
   Activity,
   IViewState,
   filterAndSortRuns,
-  filterCityRuns,
-  filterTitleRuns,
-  filterTypeRuns,
   filterYearRuns,
   geoJsonForRuns,
   getBoundsForGeoData,
@@ -28,7 +21,6 @@ import {
 } from '@/utils/utils';
 
 const Index = () => {
-  const { siteTitle } = useSiteMetadata();
   const { activities, thisYear } = useActivities();
   const [year, setYear] = useState(thisYear);
   const [runIndex, setRunIndex] = useState(-1);
@@ -45,22 +37,7 @@ const Index = () => {
     ...bounds,
   });
 
-  const changeByItem = (
-    item: string,
-    name: string,
-    func: (_run: Activity, _value: string) => boolean
-  ) => {
-    scrollToMap();
-    if (name != 'Year') {
-      setYear(thisYear);
-    }
-    setActivity(filterAndSortRuns(activities, item, func, sortDateFunc));
-    setRunIndex(-1);
-    setTitle(`${item} ${name} Heatmap`);
-  };
-
   const changeYear = (y: string) => {
-    // default year
     setYear(y);
 
     if ((viewState.zoom ?? 0) > 3 && bounds) {
@@ -69,37 +46,12 @@ const Index = () => {
       });
     }
 
-    changeByItem(y, 'Year', filterYearRuns);
+    scrollToMap();
+    setActivity(filterAndSortRuns(activities, y, filterYearRuns, sortDateFunc));
+    setRunIndex(-1);
+    setTitle(`${y} Year Heatmap`);
     clearInterval(intervalId);
   };
-
-  const changeCity = (city: string) => {
-    changeByItem(city, 'City', filterCityRuns);
-  };
-
-  const changeTitle = (title: string) => {
-    changeByItem(title, 'Title', filterTitleRuns);
-  };
-
-  const changeType = (type: string) => {
-    changeByItem(type, 'Type', filterTypeRuns);
-  };
-
-  const changeTypeInYear = (year:string, type: string) => {
-    scrollToMap();
-    // type in year, filter year first, then type
-    if(year != 'Total'){
-      setYear(year);
-      setActivity(filterAndSortRuns(activities, year, filterYearRuns, sortDateFunc, type, filterTypeRuns));
-    }
-    else {
-      setYear(thisYear);
-      setActivity(filterAndSortRuns(activities, type, filterTypeRuns, sortDateFunc));
-    }
-    setRunIndex(-1);
-    setTitle(`${year} ${type} Type Heatmap`);
-  };
-
 
   const locateActivity = (runIds: RunIds) => {
     const ids = new Set(runIds);
@@ -195,23 +147,12 @@ const Index = () => {
 
   return (
     <Layout>
-      <DashboardStats />
       <div className="lg:flex lg:gap-8 lg:items-start">
-        {/* Left: Calendar + Table */}
+        {/* Left: Year buttons + Table */}
         <div className="w-full lg:w-3/5">
-          <h1 className="my-12 text-4xl font-extrabold italic">
-            <a>{siteTitle}</a>
-          </h1>
-          {(viewState.zoom ?? 0) <= 3 && IS_CHINESE ? (
-            <LocationStat
-              changeYear={changeYear}
-              changeCity={changeCity}
-              changeType={changeType}
-              onClickTypeInYear={changeTypeInYear}
-            />
-          ) : (
-            <YearsStat year={year} onClick={changeYear} onClickTypeInYear={changeTypeInYear}/>
-          )}
+          <div className="mb-4">
+            <RunMapButtons changeYear={changeYear} thisYear={year} />
+          </div>
           {year === 'Total' ? (
             <SVGStat />
           ) : (

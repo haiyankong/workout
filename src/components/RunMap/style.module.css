@@ -18,21 +18,15 @@
   display: inline-block;
   position: relative;
   cursor: pointer;
-  padding: 0.4rem;
-  margin-right: 0.4rem;
+  padding: 1.3rem 0.4rem;
   margin-top: 0.1rem;
   font-size: 1rem;
   text-align: center;
-  color: #ffffff;
-  font-family: 'Inter', system-ui, sans-serif;
-  border: 1px solid #e0ed5e;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  color: #024A71;
 }
 
 .selected {
-  color: #000000;
-  background-color: #e0ed5e;
-  font-weight: bold;
+  color: #EE3E35;
 }
 
 .runTitle {
@@ -42,7 +36,7 @@
   bottom: 0px;
   left: 120px;
   cursor: pointer;
-  color: #ffffff;
+  color: #024A71;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

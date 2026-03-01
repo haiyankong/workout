@@ -14,101 +14,48 @@
   .runTable td:nth-child(1) {
     display: none;
   }
-
-  .metaBar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-}
-
-@keyframes rowFadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .runTable {
   width: 100%;
   font-variant: tabular-nums;
-  border-collapse: separate;
-  border-spacing: 0 0.5rem;
   margin: 2rem 0 5rem 0;
-}
 
-.runTable thead {
-  color: #8E8E93;
-  text-align: left;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-}
+  :is(thead) {
+    color: #024A71;
+    text-align: right;
 
-.runTable thead th {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid rgba(142, 142, 147, 0.1);
-  transition: color 0.2s ease;
-  text-align: right;
-}
-
-.runTable thead th:first-child {
-  text-align: left;
-}
-
-.runTable thead th:hover {
-  color: #ffffff;
+    :is(th) {
+      padding: 0.5rem;
+    }
+  }
 }
 
 .runRow {
   cursor: pointer;
-  animation: rowFadeUp 0.2s ease both;
-  transition: background-color 0.2s ease;
-}
+  :is(td) {
+    padding: 0.5rem;
+    border: 0;
+    text-align: right;
 
-.runRow td {
-  padding: 1rem;
-  border: 0;
-  text-align: right;
-  font-size: 0.875rem;
-  color: #8E8E93;
-  border-top: 1px solid rgba(142, 142, 147, 0.05);
-  transition: color 0.2s ease;
-}
+    &:first-child {
+      text-align: left;
+      min-width: 100px;
+    }
+  }
 
-.runRow td:first-child {
-  text-align: left;
-  min-width: 100px;
-  color: #ffffff;
-  font-weight: 500;
-}
-
-.runRow:hover {
-  background-color: rgba(255, 255, 255, 0.03);
-}
-
-.runRow:hover td {
-  color: #ffffff;
+  &:hover {
+    background-color: rgba(2, 74, 113, 0.05);
+  }
 }
 
 .selected {
-  background-color: rgba(255, 59, 48, 0.1) !important;
-}
-
-.selected td {
-  color: #FF3B30 !important;
-  border-color: rgba(255, 59, 48, 0.2);
+  color: #EE3E35 !important;
 }
 
 .tableContainer {
   width: 100%;
   overflow-x: auto;
-  overflow-y: hidden;
 }
 
 .wrapper {
@@ -116,60 +63,7 @@
 }
 
 .runDate {
-  color: rgba(142, 142, 147, 0.7);
-  font-size: 0.75rem;
-}
-
-.metaBar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-  margin-top: 0.5rem;
-}
-
-.count {
-  color: rgba(142, 142, 147, 0.7);
-  font-size: 0.875rem;
-  font-variant: tabular-nums;
-}
-
-.pager {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.pageInfo {
-  color: rgba(142, 142, 147, 0.7);
-  font-size: 0.875rem;
-  font-variant: tabular-nums;
-  min-width: 4.5rem;
-  text-align: center;
-}
-
-.pageButton {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(142, 142, 147, 0.15);
-  color: #8E8E93;
-  padding: 0.35rem 0.6rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-.pageButton:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  border-color: rgba(142, 142, 147, 0.25);
-}
-
-.pageButton:disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
+  color: #024A71;
 }
 
 .titleCell {

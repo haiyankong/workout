@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   sortDateFunc,
   sortDateFuncReverse,
@@ -19,8 +19,6 @@ interface IRunTableProperties {
 
 type SortFunc = (_a: Activity, _b: Activity) => number;
 
-const PAGE_SIZE = 10;
-
 const RunTable = ({
   runs,
   locateActivity,
@@ -29,8 +27,6 @@ const RunTable = ({
   setRunIndex,
 }: IRunTableProperties) => {
   const [sortFuncInfo, setSortFuncInfo] = useState('');
-  const [page, setPage] = useState(1);
-  const [animSeed, setAnimSeed] = useState(0);
 
   const sortTypeFunc: SortFunc = (a, b) =>
     sortFuncInfo === 'Type' ? a.type > b.type ? 1:-1 : b.type < a.type ? -1:1;
@@ -68,28 +64,11 @@ const RunTable = ({
     ['Start Time', sortDateFuncClick],
   ]);
 
-  const totalCount = runs.length;
-  const totalPages = Math.max(1, Math.ceil(totalCount / PAGE_SIZE));
-
-  useEffect(() => {
-    setPage((p) => Math.min(Math.max(1, p), totalPages));
-  }, [totalPages]);
-
-  const pageStart = (page - 1) * PAGE_SIZE;
-  const pageEnd = Math.min(totalCount, pageStart + PAGE_SIZE);
-  const pageRuns = runs.slice(pageStart, pageEnd);
-
-  useEffect(() => {
-    setAnimSeed((s) => s + 1);
-  }, [page, totalCount]);
-
   const handleClick: React.MouseEventHandler<HTMLElement> = (e) => {
     const funcName = (e.target as HTMLElement).innerHTML;
     const f = sortFuncMap.get(funcName);
-
     setRunIndex(-1);
     setSortFuncInfo(sortFuncInfo === funcName ? '' : funcName);
-    setPage(1);
     setActivity(runs.sort(f));
   };
 
@@ -108,10 +87,10 @@ const RunTable = ({
             </tr>
           </thead>
           <tbody>
-            {pageRuns.map((run, elementIndex) => (
+            {runs.map((run, elementIndex) => (
               <RunRow
-                key={`${run.run_id}-${animSeed}`}
-                elementIndex={pageStart + elementIndex}
+                key={run.run_id}
+                elementIndex={elementIndex}
                 locateActivity={locateActivity}
                 run={run}
                 runIndex={runIndex}
@@ -120,33 +99,6 @@ const RunTable = ({
             ))}
           </tbody>
         </table>
-      </div>
-
-      <div className={styles.metaBar}>
-        <div className={styles.count}>
-          {totalCount === 0 ? '0' : `${pageStart + 1}-${pageEnd}`} / {totalCount}
-        </div>
-        <div className={styles.pager}>
-          <button
-            className={styles.pageButton}
-            disabled={page <= 1}
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-            type="button"
-          >
-            Prev
-          </button>
-          <div className={styles.pageInfo}>
-            {page} / {totalPages}
-          </div>
-          <button
-            className={styles.pageButton}
-            disabled={page >= totalPages}
-            onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-            type="button"
-          >
-            Next
-          </button>
-        </div>
       </div>
     </div>
   );

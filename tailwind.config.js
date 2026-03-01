@@ -3,15 +3,25 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,css}'],
   theme: {
     fontFamily: {
-      sans: ['Inter', 'system-ui', 'sans-serif'],
+      sans: [
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Segoe UI',
+        'Roboto',
+        'Oxygen-Sans',
+        'Ubuntu',
+        'Cantarell',
+        'Helvetica Neue',
+        'sans-serif',
+      ],
     },
     extend: {
       colors: {
-        background: '#000000',
-        card: '#1C1C1E',
-        primary: '#FFFFFF',
-        secondary: '#8E8E93',
-        accent: '#FF3B30',
+        background: '#F5F5F5',
+        card: '#FFFFFF',
+        primary: '#024A71',
+        secondary: '#5A8A9F',
+        accent: '#EE3E35',
       },
       borderRadius: {
         card: '1rem',
