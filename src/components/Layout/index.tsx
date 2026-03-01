@@ -22,7 +22,7 @@ const Layout = ({ children }: React.PropsWithChildren) => {
         />
       </Helmet>
       <Header />
-      <main className="flex-grow w-full max-w-[1400px] mx-auto p-4 md:p-8">
+      <main className="flex-grow w-full p-4 lg:p-16">
         {children}
       </main>
       <Footer />
