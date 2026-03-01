@@ -148,7 +148,7 @@ const Index = () => {
     <Layout>
       <div className="lg:flex lg:gap-8 lg:items-start">
         {/* Left: Map */}
-        <div className="w-full lg:w-2/5">
+        <div className="w-full lg:w-2/5 lg:sticky lg:top-4">
           <RunMap
             title={title}
             viewState={viewState}
