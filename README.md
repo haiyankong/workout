@@ -9,6 +9,8 @@
 
 - https://github.com/ben-29/workouts_page/issues/20
 - [也搞了一个展示行走数据的页面 | 椒盐豆豉](https://blog.douchi.space/steps-page/)
+- https://imcolin.fan/running/
+- 帮抄作业：Claude Code
 
 
 # 基本设置
