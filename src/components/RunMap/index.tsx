@@ -18,7 +18,6 @@ import {
 } from '@/utils/const';
 import { Coordinate, IViewState, geoJsonForMap } from '@/utils/utils';
 import RunMarker from './RunMarker';
-import RunMapButtons from './RunMapButtons';
 import styles from './style.module.css';
 import { FeatureCollection } from 'geojson';
 import { RPGeometry } from '@/static/run_countries';
@@ -172,9 +171,6 @@ const RunMap = ({
       ref={mapRefCallback}
       mapboxAccessToken={MAPBOX_TOKEN}
     >
-      <div className="hidden lg:block">
-        <RunMapButtons changeYear={changeYear} thisYear={thisYear} />
-      </div>
       <Source id="data" type="geojson" data={geoData}>
         <Layer
           id="province"

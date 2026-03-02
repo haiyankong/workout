@@ -146,8 +146,8 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Mobile-only year selector strip (above the map; desktop uses map overlay) */}
-      <div className="lg:hidden mb-3 overflow-x-auto">
+      {/* Year selector strip above the map */}
+      <div className="mb-3 overflow-x-auto">
         <RunMapButtons changeYear={changeYear} thisYear={year} className="flex whitespace-nowrap" />
       </div>
       <div className="lg:flex lg:gap-8 lg:items-start">
