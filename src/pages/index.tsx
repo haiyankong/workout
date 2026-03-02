@@ -146,6 +146,10 @@ const Index = () => {
 
   return (
     <Layout>
+      {/* Mobile-only year selector strip (above the map; desktop uses map overlay) */}
+      <div className="lg:hidden mb-3 overflow-x-auto">
+        <RunMapButtons changeYear={changeYear} thisYear={year} className="flex whitespace-nowrap" />
+      </div>
       <div className="lg:flex lg:gap-8 lg:items-start">
         {/* Left: Map */}
         <div className="w-full lg:w-2/5 lg:sticky lg:top-4">
@@ -158,11 +162,8 @@ const Index = () => {
             thisYear={year}
           />
         </div>
-        {/* Right: Year buttons + Table */}
+        {/* Right: Table / SVG */}
         <div className="w-full lg:w-3/5">
-          <div className="mb-4">
-            <RunMapButtons changeYear={changeYear} thisYear={year} />
-          </div>
           {year === 'Total' ? (
             <SVGStat />
           ) : (

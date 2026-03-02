@@ -1,5 +1,5 @@
 import MapboxLanguage from '@mapbox/mapbox-gl-language';
-import React, {useRef, useCallback, useState} from 'react';
+import React, {useRef, useCallback, useState, useEffect} from 'react';
 import Map, {Layer, Source, FullscreenControl, NavigationControl, MapRef} from 'react-map-gl';
 import {MapInstance} from "react-map-gl/src/types/lib";
 import useActivities from '@/hooks/useActivities';
@@ -50,6 +50,15 @@ const RunMap = ({
   const [mapLoaded, setMapLoaded] = useState(false);
   const mapRef = useRef<MapRef>();
   const [lights, setLights] = useState(PRIVACY_MODE ? false : LIGHTS_ON);
+  const [mapHeight, setMapHeight] = useState(() =>
+    window.innerWidth < 1024 ? Math.min(MAP_HEIGHT, 420) : MAP_HEIGHT
+  );
+  useEffect(() => {
+    const handleResize = () =>
+      setMapHeight(window.innerWidth < 1024 ? Math.min(MAP_HEIGHT, 420) : MAP_HEIGHT);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   const keepWhenLightsOff = ['runs2']
   function switchLayerVisibility(map: MapInstance, lights: boolean) {
     const styleJson = map.getStyle();
@@ -145,7 +154,7 @@ const RunMap = ({
   }, []);
   const style: React.CSSProperties = {
     width: '100%',
-    height: MAP_HEIGHT,
+    height: mapHeight,
   };
   const fullscreenButton: React.CSSProperties = {
     position: 'absolute',
@@ -163,7 +172,9 @@ const RunMap = ({
       ref={mapRefCallback}
       mapboxAccessToken={MAPBOX_TOKEN}
     >
-      <RunMapButtons changeYear={changeYear} thisYear={thisYear} />
+      <div className="hidden lg:block">
+        <RunMapButtons changeYear={changeYear} thisYear={thisYear} />
+      </div>
       <Source id="data" type="geojson" data={geoData}>
         <Layer
           id="province"

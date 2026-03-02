@@ -1,13 +1,13 @@
 import useActivities from '@/hooks/useActivities';
 import styles from './style.module.css';
 
-const RunMapButtons = ({ changeYear, thisYear }: { changeYear: (_year: string) => void, thisYear: string }) => {
+const RunMapButtons = ({ changeYear, thisYear, className }: { changeYear: (_year: string) => void, thisYear: string, className?: string }) => {
   const { years } = useActivities();
   const yearsButtons = years.slice();
   yearsButtons.push('Total');
 
   return (
-    <ul className={styles.buttons}>
+    <ul className={className ?? styles.buttons}>
       {yearsButtons.map((year) => (
         <li
           key={`${year}button`}
