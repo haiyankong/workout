@@ -3662,5 +3662,21 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 17571688279,
+"name": "Strength Training (\u81c0\u817f 3\uff0c\u80cc 2)",
+"distance": 0.0,
+"moving_time": "0:53:49",
+"type": "Workout",
+"start_date": "2026-03-02 01:26:04+00:00",
+"start_date_local": "2026-03-01 20:26:04",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": null,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 1
 }
 ]
