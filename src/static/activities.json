@@ -3678,5 +3678,21 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 17643020748,
+"name": "Cypress Gardens",
+"distance": 5156.0,
+"moving_time": "1:41:27",
+"type": "Hike",
+"start_date": "2026-03-07 16:43:59+00:00",
+"start_date_local": "2026-03-07 11:43:59",
+"location_country": "White Hall Plantation, Berkeley County, \u5357\u5361\u7f57\u6765\u7eb3\u5dde;\u5357\u5361\u7f85\u840a\u7d0d\u5dde, \u7f8e\u56fd;\u7f8e\u570b",
+"summary_polyline": "ynvhEzx~fNA@P_@@HJHh@Gl@e@LATOd@ETEb@SVSXITQNG\\AXLl@IVFf@D\\Nn@Bf@AXBv@M`@Sf@Mn@]|@w@WSEI?k@W}@QiAUw@AKHK\\S@E?ECH@PC@KEBXDNJNHDF?FGRc@b@g@Xa@HEHBP`@PDVDx@?r@UTEfAZt@@JDQH[FYCWEWKOOEK?QBPFJRLPFn@E\\B\\CER[AGBCDBFPNh@RBD?LEV_@t@AHBHNHn@?nAJHDT^H@ZELFFA\\Uz@a@t@k@Sj@?FD?NEXUh@ITPH?FGT]ROLEVAr@_@bASFIFYhAkB^V@g@Ec@CIKEEIKeA?WD]GJCE@ORoADq@?KEMEGICAGHe@?_@ISi@s@Sc@DMb@[RU?CKa@MKSA@MGKDCe@EGYM^YMk@@IBWf@KZKDOAGFD^ARENQd@k@l@ERMPMd@WPGLOPUHIREOG?QP]LS`@w@`@M?c@UBD?FIHWGJG?DUCWDc@NI@GACE?O?}@BQ]]IMESKiACKSSUGI@QHCDAPCHI?ED]d@[HUZo@j@UZYLWh@QPMHs@RK?KKKCWDQM[AICi@i@E@AFIAEBMf@GL]\\[Na@j@WJMPQJw@Re@f@MTO?KDM`@SJ[HIFGh@BTSjA_@v@E?EGH@FDKA?FNUEVMFFKDBADEECFAMBFBJMC@OHD?FICKPKHi@NOAIGKA{@AaA[][OYQIJJBLY`@Kt@GbAShA@f@DRDFVDLH\\VQc@H?FHFBL?@CGDCF?DDBr@WNKf@S^[VC^OFB@BC@AG?CBCL@d@JN@\\QF@d@i@?KFGTERQ^QN@@HCAKU?FDH^VTERQV?FC^_@^WZMH_@LUNIV[BC@B@MD@BDAECSBQEFCEi@mA",
+"average_heartrate": 110.0,
+"average_speed": 0.847,
+"elevation_gain": 18.0,
+"source": "strava",
+"streak": 1
 }
 ]
