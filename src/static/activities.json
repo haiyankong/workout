@@ -3838,5 +3838,21 @@
 "elevation_gain": 80.7,
 "source": "strava",
 "streak": 3
+},
+{
+"run_id": 17680894104,
+"name": "Pineapple Fountain",
+"distance": 872.0,
+"moving_time": "0:06:24",
+"type": "Run",
+"start_date": "2026-03-10 14:31:07+00:00",
+"start_date_local": "2026-03-10 10:31:07",
+"location_country": "Concord Street, French Quarter, Charleston, Charleston County, \u5357\u5361\u7f57\u6765\u7eb3\u5dde;\u5357\u5361\u7f85\u840a\u7d0d\u5dde, 29401, \u7f8e\u56fd;\u7f8e\u570b",
+"summary_polyline": "s{`gEdjyfNEAGFI@q@Eq@?gBLKDEJCJ?d@A[Sg@EWGcAQuAGSIGB@@C@JAI@EFRj@tEFVNXLFp@@n@PJ?l@MJBBDTtAj@|A^|@EFGPAXh@fCPl@l@tA",
+"average_heartrate": 125.2,
+"average_speed": 2.271,
+"elevation_gain": 3.0,
+"source": "strava",
+"streak": 4
 }
 ]
