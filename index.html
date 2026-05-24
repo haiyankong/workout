@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Workout HUB</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data/exercise-notes.js" defer></script>
+    <script src="data/training-data.js" defer></script>
+    <script src="data/current-plan.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1 class="site-title">Workout HUB</h1>
+        </div>
+      </header>
+
+      <nav class="tabs" aria-label="页面">
+        <button class="tab is-active" type="button" data-view="library">动作库</button>
+        <button class="tab" type="button" data-view="plan">训练计划</button>
+        <button class="tab" type="button" data-view="history">训练历史</button>
+      </nav>
+
+      <section class="view is-active" id="libraryView">
+        <section class="selectors" aria-label="目录筛选">
+          <label>
+            项目大类
+            <select id="levelOneSelect">
+              <option value="">全部项目大类</option>
+            </select>
+          </label>
+          <label>
+            具体动作
+            <select id="levelTwoSelect" disabled>
+              <option value="">先选择项目大类</option>
+            </select>
+          </label>
+          <button id="resetLibrary" class="plain-button" type="button">重置</button>
+        </section>
+
+        <div class="library-layout">
+          <aside class="directory-panel" aria-label="目录">
+            <div class="panel-heading">
+              <h2>目录</h2>
+              <span id="directoryMeta">全部</span>
+            </div>
+            <div id="directoryList" class="directory-list"></div>
+          </aside>
+
+          <article class="reader-panel" id="readerPanel"></article>
+        </div>
+      </section>
+
+      <section class="view" id="planView">
+        <article class="panel plan-document">
+          <div class="note-content" id="planDocument"></div>
+        </article>
+      </section>
+
+      <section class="view" id="historyView">
+        <section class="history-toolbar" aria-label="筛选">
+          <label>
+            开始日期
+            <input id="startDate" type="date" />
+          </label>
+          <label>
+            结束日期
+            <input id="endDate" type="date" />
+          </label>
+          <label>
+            部位
+            <select id="bodyPart">
+              <option value="">全部</option>
+            </select>
+          </label>
+          <label>
+            动作
+            <input id="exerciseSearch" type="search" list="exerciseOptions" placeholder="搜索动作" />
+            <datalist id="exerciseOptions"></datalist>
+          </label>
+          <button class="icon-button" id="resetFilters" type="button" title="重置筛选" aria-label="重置筛选">
+            ×
+          </button>
+        </section>
+
+        <section class="stats-grid" aria-label="训练概览">
+          <article class="stat-tile">
+            <span>记录条目</span>
+            <strong id="statRecords">0</strong>
+          </article>
+          <article class="stat-tile">
+            <span>训练日</span>
+            <strong id="statDays">0</strong>
+          </article>
+          <article class="stat-tile">
+            <span>总组数</span>
+            <strong id="statSets">0</strong>
+          </article>
+          <article class="stat-tile">
+            <span>估算总次数</span>
+            <strong id="statReps">0</strong>
+          </article>
+        </section>
+
+        <section class="overview-grid" aria-label="训练量图表">
+          <div class="panel">
+            <div class="panel-heading">
+              <h2>部位分布</h2>
+              <span id="bodyPartTotal">0 组</span>
+            </div>
+            <div class="bar-list" id="bodyPartChart"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h2>月度训练量</h2>
+              <span id="monthTotal">0 组</span>
+            </div>
+            <div class="bar-list compact" id="monthChart"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h2>常练动作</h2>
+              <span id="exerciseTotal">0 个</span>
+            </div>
+            <div class="rank-list" id="topExercises"></div>
+          </div>
+        </section>
+
+        <section class="panel table-panel" aria-label="训练明细">
+          <div class="panel-heading">
+            <h2>训练明细</h2>
+            <span id="visibleRows">0 条</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>部位</th>
+                  <th>动作</th>
+                  <th>组数</th>
+                  <th>次数/组</th>
+                  <th>重量</th>
+                  <th>备注</th>
+                </tr>
+              </thead>
+              <tbody id="logRows"></tbody>
+            </table>
+            <div class="empty-state" id="emptyState" hidden>没有匹配的训练历史</div>
+          </div>
+        </section>
+      </section>
+      <footer class="site-footer">
+        <p>© <span id="copyrightYear">2026</span> Haiyan Kong</p>
+      </footer>
+    </main>
+  </body>
+</html>

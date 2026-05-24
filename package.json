@@ -1,0 +1,11 @@
+{
+  "name": "workout-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "rebuild": "node tools/rebuild.mjs",
+    "build": "node tools/build-site.mjs",
+    "build:site": "node tools/build-site.mjs"
+  }
+}
