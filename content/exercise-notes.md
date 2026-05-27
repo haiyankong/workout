@@ -174,11 +174,6 @@ tocBorder: true
 
 # 肩部 / Shoulders
 
-<center>
-<video width="280" controls>
-    <source src="https://haiyankong.github.io/workout-note/肩部动作.mp4" type="video/mp4">
-</video>
-</center>
 
 ## 肩外旋 / Band external shoulder rotation
 
@@ -272,12 +267,6 @@ tocBorder: true
 
 # 肱二头肌 / Biceps
 
-<center>
-<video width="280" controls>
-    <source src="https://haiyankong.github.io/workout-note/肱二头肌动作.mp4" type="video/mp4">
-</video>
-</center>
-
 ## 直臂弯举 / Cable Bicep Curl Standards
 
 目的：主要锻炼肱二头肌，增强手臂力量和肌肉轮廓。相比自由重量，滑轮提供持续张力，有助于整个动作范围内保持肌肉激活
@@ -345,12 +334,6 @@ tocBorder: true
 
 # 肱三头肌 / Triceps
 
-<center>
-<video width="280" controls>
-    <source src="https://haiyankong.github.io/workout-note/肱三头肌动作.mp4" type="video/mp4">
-</video>
-</center>
-
 ## 绳索三头肌下压 /Cable Triceps Pushdown
 
 目的：主要锻炼肱三头肌（上臂后侧肌肉），增强手臂推力和线条感，改善肘关节的稳定性和力量
@@ -397,11 +380,6 @@ tocBorder: true
 
 # 背部 / Back
 
-<center>
-<video width="280" controls>
-    <source src="https://haiyankong.github.io/workout-note/背部动作.mp4" type="video/mp4">
-</video>
-</center>
 
 ## 辅助引体向上 / Assisted Pull-up
 
@@ -742,12 +720,6 @@ tocBorder: true
 {{< figure src="https://haiyankong.github.io/workout-note/罗马椅负重侧腹.gif" width="500px" caption="罗马椅负重侧腹">}}
 
 # 臀腿
-
-<center>
-<video width="280" controls>
-    <source src="https://haiyankong.github.io/workout-note/腿部动作.mp4" type="video/mp4">
-</video>
-</center>
 
 ## 概述
 
