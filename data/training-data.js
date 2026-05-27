@@ -1,6 +1,5 @@
 window.TRAINING_LOG = [
   {
-    "source_order": 163,
     "date": "2025-02-21",
     "body_part": "背部",
     "exercise": "杠杆交叉下拉",
@@ -12,7 +11,6 @@ window.TRAINING_LOG = [
     "notes": "面朝器械"
   },
   {
-    "source_order": 164,
     "date": "2025-02-21",
     "body_part": "肱三头肌",
     "exercise": "绳索下压",
@@ -24,7 +22,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 159,
     "date": "2025-02-23",
     "body_part": "背部",
     "exercise": "杠杆交叉下拉",
@@ -36,7 +33,6 @@ window.TRAINING_LOG = [
     "notes": "面朝器械"
   },
   {
-    "source_order": 160,
     "date": "2025-02-23",
     "body_part": "背部",
     "exercise": "罗马椅伸展",
@@ -48,7 +44,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 161,
     "date": "2025-02-23",
     "body_part": "肱三头肌",
     "exercise": "绳索下压",
@@ -60,7 +55,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 162,
     "date": "2025-02-23",
     "body_part": "臀腿",
     "exercise": "坐姿腿屈伸",
@@ -72,7 +66,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 157,
     "date": "2025-02-25",
     "body_part": "有氧",
     "exercise": "战绳",
@@ -84,7 +77,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 158,
     "date": "2025-02-25",
     "body_part": "臀腿",
     "exercise": "箭步蹲加转体",
@@ -96,7 +88,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 152,
     "date": "2025-02-28",
     "body_part": "背部",
     "exercise": "杠杆交叉下拉",
@@ -108,7 +99,6 @@ window.TRAINING_LOG = [
     "notes": "面朝器械"
   },
   {
-    "source_order": 153,
     "date": "2025-02-28",
     "body_part": "腹部",
     "exercise": "船长椅直腿抬高",
@@ -120,7 +110,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 154,
     "date": "2025-02-28",
     "body_part": "肱三头肌",
     "exercise": "绳索下压",
@@ -132,7 +121,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 155,
     "date": "2025-02-28",
     "body_part": "臀腿",
     "exercise": "坐姿髋内收",
@@ -144,7 +132,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 156,
     "date": "2025-02-28",
     "body_part": "臀腿",
     "exercise": "坐姿髋外展",
@@ -156,7 +143,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 148,
     "date": "2025-03-06",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -168,7 +154,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 149,
     "date": "2025-03-06",
     "body_part": "肩部",
     "exercise": "坐姿器械推肩",
@@ -180,7 +165,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 150,
     "date": "2025-03-06",
     "body_part": "臀腿",
     "exercise": "哑铃箭步蹲",
@@ -192,7 +176,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 151,
     "date": "2025-03-06",
     "body_part": "有氧",
     "exercise": "战绳",
@@ -204,7 +187,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 144,
     "date": "2025-03-09",
     "body_part": "腹部",
     "exercise": "V-Up",
@@ -216,7 +198,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 145,
     "date": "2025-03-09",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -228,7 +209,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 146,
     "date": "2025-03-09",
     "body_part": "肩部",
     "exercise": "阿诺德推肩",
@@ -240,7 +220,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 147,
     "date": "2025-03-09",
     "body_part": "臀腿",
     "exercise": "箭步蹲加转体",
@@ -252,7 +231,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 139,
     "date": "2025-03-14",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -264,7 +242,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 140,
     "date": "2025-03-14",
     "body_part": "背部",
     "exercise": "杠杆交叉下拉",
@@ -276,7 +253,6 @@ window.TRAINING_LOG = [
     "notes": "背对器械"
   },
   {
-    "source_order": 141,
     "date": "2025-03-14",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -288,7 +264,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 142,
     "date": "2025-03-14",
     "body_part": "肩部",
     "exercise": "哑铃侧平举",
@@ -300,7 +275,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 143,
     "date": "2025-03-14",
     "body_part": "肩部",
     "exercise": "坐姿器械推肩",
@@ -312,7 +286,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 133,
     "date": "2025-03-21",
     "body_part": "背部",
     "exercise": "杠杆交叉下拉",
@@ -324,7 +297,6 @@ window.TRAINING_LOG = [
     "notes": "背对器械"
   },
   {
-    "source_order": 134,
     "date": "2025-03-21",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -336,7 +308,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 135,
     "date": "2025-03-21",
     "body_part": "腹部",
     "exercise": "俄罗斯转体",
@@ -348,7 +319,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 136,
     "date": "2025-03-21",
     "body_part": "腹部",
     "exercise": "负重上举/卷腹",
@@ -360,7 +330,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 137,
     "date": "2025-03-21",
     "body_part": "肩部",
     "exercise": "肩外旋",
@@ -372,7 +341,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 138,
     "date": "2025-03-21",
     "body_part": "腹部",
     "exercise": "仰卧抬腿",
@@ -384,7 +352,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 129,
     "date": "2025-03-24",
     "body_part": "背部",
     "exercise": "T杠划船",
@@ -396,7 +363,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 130,
     "date": "2025-03-24",
     "body_part": "腹部",
     "exercise": "罗马椅负重侧腹",
@@ -408,7 +374,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 131,
     "date": "2025-03-24",
     "body_part": "臀腿",
     "exercise": "器械倒蹬",
@@ -420,7 +385,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 132,
     "date": "2025-03-24",
     "body_part": "臀腿",
     "exercise": "坐姿髋外展",
@@ -432,7 +396,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 124,
     "date": "2025-03-27",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -444,7 +407,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 125,
     "date": "2025-03-27",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -456,7 +418,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 126,
     "date": "2025-03-27",
     "body_part": "肩部",
     "exercise": "肩外旋",
@@ -468,7 +429,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 127,
     "date": "2025-03-27",
     "body_part": "臀腿",
     "exercise": "坐姿髋外展",
@@ -480,7 +440,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 128,
     "date": "2025-03-27",
     "body_part": "臀腿",
     "exercise": "坐姿腿屈伸",
@@ -492,7 +451,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 122,
     "date": "2025-03-29",
     "body_part": "背部",
     "exercise": "杠杆交叉下拉",
@@ -504,7 +462,6 @@ window.TRAINING_LOG = [
     "notes": "背对器械"
   },
   {
-    "source_order": 123,
     "date": "2025-03-29",
     "body_part": "臀腿",
     "exercise": "反向哈克机深蹲",
@@ -516,7 +473,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 117,
     "date": "2025-04-05",
     "body_part": "臀腿",
     "exercise": "器械倒蹬",
@@ -528,7 +484,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 118,
     "date": "2025-04-05",
     "body_part": "臀腿",
     "exercise": "史密斯硬拉",
@@ -540,7 +495,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 119,
     "date": "2025-04-05",
     "body_part": "臀腿",
     "exercise": "哑铃保加利亚分腿深蹲",
@@ -552,7 +506,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 120,
     "date": "2025-04-05",
     "body_part": "臀腿",
     "exercise": "坐姿髋内收",
@@ -564,7 +517,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 121,
     "date": "2025-04-05",
     "body_part": "臀腿",
     "exercise": "坐姿髋外展",
@@ -576,7 +528,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 116,
     "date": "2025-04-09",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -588,7 +539,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 111,
     "date": "2025-04-13",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -600,7 +550,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 112,
     "date": "2025-04-13",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -612,7 +561,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 113,
     "date": "2025-04-13",
     "body_part": "臀腿",
     "exercise": "器械倒蹬",
@@ -624,7 +572,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 114,
     "date": "2025-04-13",
     "body_part": "臀腿",
     "exercise": "深蹲",
@@ -636,7 +583,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 115,
     "date": "2025-04-13",
     "body_part": "臀腿",
     "exercise": "坐姿腿弯举",
@@ -648,7 +594,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 107,
     "date": "2025-04-17",
     "body_part": "背部",
     "exercise": "单臂高位下拉",
@@ -660,7 +605,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 108,
     "date": "2025-04-17",
     "body_part": "肩部",
     "exercise": "阿诺德推肩",
@@ -672,7 +616,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 109,
     "date": "2025-04-17",
     "body_part": "臀腿",
     "exercise": "坐姿腿弯举",
@@ -684,7 +627,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 110,
     "date": "2025-04-17",
     "body_part": "臀腿",
     "exercise": "高脚杯深蹲",
@@ -696,7 +638,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 100,
     "date": "2025-04-29",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -708,7 +649,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 102,
     "date": "2025-04-29",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -720,7 +660,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 103,
     "date": "2025-04-29",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -732,7 +671,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 104,
     "date": "2025-04-29",
     "body_part": "臀腿",
     "exercise": "反向哈克机深蹲",
@@ -744,7 +682,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 105,
     "date": "2025-04-29",
     "body_part": "臀腿",
     "exercise": "深蹲",
@@ -756,7 +693,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 106,
     "date": "2025-04-29",
     "body_part": "臀腿",
     "exercise": "坐姿腿弯举",
@@ -768,7 +704,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 97,
     "date": "2025-05-10",
     "body_part": "腹部",
     "exercise": "前平板支撑",
@@ -780,7 +715,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 98,
     "date": "2025-05-10",
     "body_part": "肱三头肌",
     "exercise": "坐姿颈后臂屈伸",
@@ -792,7 +726,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 99,
     "date": "2025-05-10",
     "body_part": "肩部",
     "exercise": "坐姿器械推肩",
@@ -804,7 +737,6 @@ window.TRAINING_LOG = [
     "notes": "教练辅助"
   },
   {
-    "source_order": 101,
     "date": "2025-05-10",
     "body_part": "臀腿",
     "exercise": "史密斯相扑深蹲",
@@ -816,7 +748,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 93,
     "date": "2025-05-15",
     "body_part": "腹部",
     "exercise": "前平板支撑",
@@ -828,7 +759,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 94,
     "date": "2025-05-15",
     "body_part": "背部",
     "exercise": "宽距高位下拉",
@@ -840,7 +770,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 95,
     "date": "2025-05-15",
     "body_part": "臀腿",
     "exercise": "反向哈克机深蹲",
@@ -852,7 +781,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 96,
     "date": "2025-05-15",
     "body_part": "臀腿",
     "exercise": "坐姿腿弯举",
@@ -864,7 +792,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 89,
     "date": "2025-05-18",
     "body_part": "背部",
     "exercise": "直臂下压",
@@ -876,7 +803,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 91,
     "date": "2025-05-18",
     "body_part": "肱二头肌",
     "exercise": "直臂弯举",
@@ -888,7 +814,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 92,
     "date": "2025-05-18",
     "body_part": "胸部",
     "exercise": "杠铃卧推",
@@ -900,7 +825,6 @@ window.TRAINING_LOG = [
     "notes": "教练辅助"
   },
   {
-    "source_order": 85,
     "date": "2025-06-07",
     "body_part": "背部",
     "exercise": "坐姿划船（窄距）",
@@ -912,7 +836,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 87,
     "date": "2025-06-07",
     "body_part": "腹部",
     "exercise": "罗马椅负重侧腹",
@@ -924,7 +847,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 88,
     "date": "2025-06-07",
     "body_part": "肱二头肌",
     "exercise": "直臂弯举",
@@ -936,7 +858,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 90,
     "date": "2025-06-07",
     "body_part": "臀腿",
     "exercise": "坐姿腿屈伸",
@@ -948,7 +869,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 82,
     "date": "2025-06-13",
     "body_part": "背部",
     "exercise": "杠杆交叉下拉",
@@ -960,7 +880,6 @@ window.TRAINING_LOG = [
     "notes": "背对器械"
   },
   {
-    "source_order": 83,
     "date": "2025-06-13",
     "body_part": "腹部",
     "exercise": "俄罗斯转体",
@@ -972,7 +891,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 84,
     "date": "2025-06-13",
     "body_part": "腹部",
     "exercise": "负重上举",
@@ -984,7 +902,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 86,
     "date": "2025-06-13",
     "body_part": "臀腿",
     "exercise": "反向哈克机深蹲",
@@ -996,7 +913,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 80,
     "date": "2025-06-14",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -1008,7 +924,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 81,
     "date": "2025-06-14",
     "body_part": "背部",
     "exercise": "宽距高位下拉",
@@ -1020,7 +935,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 76,
     "date": "2025-06-16",
     "body_part": "背部",
     "exercise": "单臂高位下拉",
@@ -1032,7 +946,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 77,
     "date": "2025-06-16",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -1044,7 +957,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 78,
     "date": "2025-06-16",
     "body_part": "肩部",
     "exercise": "肩外旋",
@@ -1056,7 +968,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 79,
     "date": "2025-06-16",
     "body_part": "臀腿",
     "exercise": "器械倒蹬",
@@ -1068,7 +979,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 73,
     "date": "2025-06-18",
     "body_part": "背部",
     "exercise": "杠杆交叉下拉",
@@ -1080,7 +990,6 @@ window.TRAINING_LOG = [
     "notes": "背对器械"
   },
   {
-    "source_order": 74,
     "date": "2025-06-18",
     "body_part": "肩部",
     "exercise": "肩外旋",
@@ -1092,7 +1001,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 75,
     "date": "2025-06-18",
     "body_part": "臀腿",
     "exercise": "史密斯相扑深蹲",
@@ -1104,7 +1012,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 69,
     "date": "2025-06-21",
     "body_part": "腹部",
     "exercise": "负重上举",
@@ -1116,7 +1023,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 70,
     "date": "2025-06-21",
     "body_part": "臀腿",
     "exercise": "史密斯相扑深蹲",
@@ -1128,7 +1034,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 71,
     "date": "2025-06-21",
     "body_part": "臀腿",
     "exercise": "坐姿腿屈伸",
@@ -1140,7 +1045,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 72,
     "date": "2025-06-21",
     "body_part": "臀腿",
     "exercise": "坐姿腿弯举",
@@ -1152,7 +1056,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 64,
     "date": "2025-06-25",
     "body_part": "背部",
     "exercise": "单臂高位下拉",
@@ -1164,7 +1067,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 65,
     "date": "2025-06-25",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -1176,7 +1078,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 66,
     "date": "2025-06-25",
     "body_part": "背部",
     "exercise": "宽距高位下拉",
@@ -1188,7 +1089,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 67,
     "date": "2025-06-25",
     "body_part": "肩部",
     "exercise": "哑铃侧平举",
@@ -1200,7 +1100,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 68,
     "date": "2025-06-25",
     "body_part": "肩部",
     "exercise": "坐姿器械推肩",
@@ -1212,7 +1111,6 @@ window.TRAINING_LOG = [
     "notes": "教练辅助"
   },
   {
-    "source_order": 60,
     "date": "2025-06-27",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -1224,7 +1122,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 61,
     "date": "2025-06-27",
     "body_part": "臀腿",
     "exercise": "史密斯相扑深蹲",
@@ -1236,7 +1133,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 62,
     "date": "2025-06-27",
     "body_part": "臀腿",
     "exercise": "坐姿腿屈伸",
@@ -1248,7 +1144,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 63,
     "date": "2025-06-27",
     "body_part": "臀腿",
     "exercise": "坐姿腿弯举",
@@ -1260,7 +1155,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 56,
     "date": "2025-06-29",
     "body_part": "肱二头肌",
     "exercise": "杠铃弯举",
@@ -1272,7 +1166,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 57,
     "date": "2025-06-29",
     "body_part": "肱二头肌",
     "exercise": "哑铃弯举",
@@ -1284,7 +1177,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 58,
     "date": "2025-06-29",
     "body_part": "臀腿",
     "exercise": "器械倒蹬",
@@ -1296,7 +1188,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 59,
     "date": "2025-06-29",
     "body_part": "臀腿",
     "exercise": "坐姿髋外展",
@@ -1308,7 +1199,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 54,
     "date": "2025-07-02",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -1320,7 +1210,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 55,
     "date": "2025-07-02",
     "body_part": "臀腿",
     "exercise": "史密斯相扑深蹲",
@@ -1332,7 +1221,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 53,
     "date": "2025-07-03",
     "body_part": "肱三头肌",
     "exercise": "绳索下压",
@@ -1344,7 +1232,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 47,
     "date": "2025-07-10",
     "body_part": "背部",
     "exercise": "单臂高位下拉",
@@ -1356,7 +1243,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 49,
     "date": "2025-07-10",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -1368,7 +1254,6 @@ window.TRAINING_LOG = [
     "notes": "重量不准确"
   },
   {
-    "source_order": 50,
     "date": "2025-07-10",
     "body_part": "肩部",
     "exercise": "肩外旋",
@@ -1380,7 +1265,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 51,
     "date": "2025-07-10",
     "body_part": "臀腿",
     "exercise": "史密斯相扑深蹲",
@@ -1392,7 +1276,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 52,
     "date": "2025-07-10",
     "body_part": "臀腿",
     "exercise": "坐姿髋外展",
@@ -1404,7 +1287,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 45,
     "date": "2025-07-25",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -1416,7 +1298,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 46,
     "date": "2025-07-25",
     "body_part": "肩部",
     "exercise": "哑铃侧平举",
@@ -1428,7 +1309,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 48,
     "date": "2025-07-25",
     "body_part": "臀腿",
     "exercise": "高脚杯深蹲",
@@ -1440,7 +1320,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 41,
     "date": "2025-08-24",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -1452,7 +1331,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 42,
     "date": "2025-08-24",
     "body_part": "肱二头肌",
     "exercise": "哑铃弯举",
@@ -1464,7 +1342,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 43,
     "date": "2025-08-24",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -1476,7 +1353,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 44,
     "date": "2025-08-24",
     "body_part": "肱三头肌",
     "exercise": "绳索下压",
@@ -1488,7 +1364,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 38,
     "date": "2025-08-29",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -1500,7 +1375,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 39,
     "date": "2025-08-29",
     "body_part": "背部",
     "exercise": "宽距高位下拉",
@@ -1512,7 +1386,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 40,
     "date": "2025-08-29",
     "body_part": "臀腿",
     "exercise": "坐姿髋内收",
@@ -1524,7 +1397,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 33,
     "date": "2025-09-12",
     "body_part": "背部",
     "exercise": "单臂高位下拉",
@@ -1536,7 +1408,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 35,
     "date": "2025-09-12",
     "body_part": "背部",
     "exercise": "宽距高位下拉",
@@ -1548,7 +1419,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 36,
     "date": "2025-09-12",
     "body_part": "臀腿",
     "exercise": "坐姿髋内收",
@@ -1560,7 +1430,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 37,
     "date": "2025-09-12",
     "body_part": "臀腿",
     "exercise": "坐姿腿屈伸",
@@ -1572,7 +1441,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 29,
     "date": "2025-09-19",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -1584,7 +1452,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 30,
     "date": "2025-09-19",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -1596,7 +1463,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 31,
     "date": "2025-09-19",
     "body_part": "肱二头肌",
     "exercise": "哑铃弯举",
@@ -1608,7 +1474,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 32,
     "date": "2025-09-19",
     "body_part": "臀腿",
     "exercise": "坐姿髋外展",
@@ -1620,7 +1485,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 34,
     "date": "2025-09-19",
     "body_part": "臀腿",
     "exercise": "坐姿腿弯举",
@@ -1632,7 +1496,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 25,
     "date": "2025-09-22",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -1644,7 +1507,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 26,
     "date": "2025-09-22",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -1656,7 +1518,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 27,
     "date": "2025-09-22",
     "body_part": "臀腿",
     "exercise": "器械倒蹬",
@@ -1668,7 +1529,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 28,
     "date": "2025-09-22",
     "body_part": "臀腿",
     "exercise": "坐姿髋内收",
@@ -1680,7 +1540,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 22,
     "date": "2025-10-03",
     "body_part": "背部",
     "exercise": "单臂高位下拉",
@@ -1692,7 +1551,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 23,
     "date": "2025-10-03",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -1704,7 +1562,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 24,
     "date": "2025-10-03",
     "body_part": "肱二头肌",
     "exercise": "哑铃弯举",
@@ -1716,7 +1573,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 19,
     "date": "2025-10-09",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -1728,7 +1584,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 20,
     "date": "2025-10-09",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -1740,7 +1595,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 21,
     "date": "2025-10-09",
     "body_part": "臀腿",
     "exercise": "器械倒蹬",
@@ -1752,7 +1606,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 14,
     "date": "2025-11-14",
     "body_part": "背部",
     "exercise": "单臂高位下拉",
@@ -1764,7 +1617,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 15,
     "date": "2025-11-14",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -1776,7 +1628,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 16,
     "date": "2025-11-14",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -1788,7 +1639,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 17,
     "date": "2025-11-14",
     "body_part": "臀腿",
     "exercise": "器械倒蹬",
@@ -1800,7 +1650,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 18,
     "date": "2025-11-14",
     "body_part": "肱二头肌",
     "exercise": "哑铃弯举",
@@ -1812,7 +1661,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 10,
     "date": "2025-12-08",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -1824,7 +1672,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 11,
     "date": "2025-12-08",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -1836,7 +1683,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 12,
     "date": "2025-12-08",
     "body_part": "臀腿",
     "exercise": "坐姿髋内收",
@@ -1848,7 +1694,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 13,
     "date": "2025-12-08",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -1860,7 +1705,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 4,
     "date": "2025-12-12",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -1872,7 +1716,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 6,
     "date": "2025-12-12",
     "body_part": "背部",
     "exercise": "辅助引体向上",
@@ -1884,7 +1727,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 7,
     "date": "2025-12-12",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -1896,7 +1738,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 8,
     "date": "2025-12-12",
     "body_part": "肩部",
     "exercise": "哑铃侧平举",
@@ -1908,7 +1749,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 9,
     "date": "2025-12-12",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -1920,7 +1760,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 1,
     "date": "2026-01-28",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -1932,7 +1771,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 2,
     "date": "2026-01-28",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -1944,7 +1782,6 @@ window.TRAINING_LOG = [
     "notes": "重量不准确"
   },
   {
-    "source_order": 3,
     "date": "2026-01-28",
     "body_part": "背部",
     "exercise": "宽距高位下拉",
@@ -1956,7 +1793,6 @@ window.TRAINING_LOG = [
     "notes": "重量不准确"
   },
   {
-    "source_order": 5,
     "date": "2026-01-28",
     "body_part": "臀腿",
     "exercise": "坐姿腿弯举",
@@ -1968,7 +1804,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 168,
     "date": "2026-02-14",
     "body_part": "肩部",
     "exercise": "哑铃侧平举",
@@ -1980,7 +1815,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 170,
     "date": "2026-02-14",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -1992,7 +1826,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 171,
     "date": "2026-02-14",
     "body_part": "背部",
     "exercise": "宽距高位下拉",
@@ -2004,7 +1837,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 172,
     "date": "2026-02-14",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -2016,7 +1848,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 165,
     "date": "2026-02-25",
     "body_part": "背部",
     "exercise": "颈后高位下拉",
@@ -2028,7 +1859,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 166,
     "date": "2026-02-25",
     "body_part": "背部",
     "exercise": "宽距高位下拉",
@@ -2040,7 +1870,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 167,
     "date": "2026-02-25",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -2052,7 +1881,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 169,
     "date": "2026-02-25",
     "body_part": "肱二头肌",
     "exercise": "牧师凳肱二头肌弯举",
@@ -2064,7 +1892,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 173,
     "date": "2026-05-22",
     "body_part": "背部",
     "exercise": "坐姿划船",
@@ -2076,7 +1903,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 174,
     "date": "2026-05-22",
     "body_part": "臀腿",
     "exercise": "坐姿髋内收",
@@ -2088,7 +1914,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 175,
     "date": "2026-05-22",
     "body_part": "背部",
     "exercise": "单臂哑铃划船",
@@ -2100,7 +1925,6 @@ window.TRAINING_LOG = [
     "notes": ""
   },
   {
-    "source_order": 176,
     "date": "2026-05-22",
     "body_part": "臀腿",
     "exercise": "哑铃保加利亚分腿深蹲",
@@ -2109,6 +1933,61 @@ window.TRAINING_LOG = [
     "reps_per_set_raw": "12",
     "reps_per_set_estimated": 12,
     "weight_raw": "2.5kg*2",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-26",
+    "body_part": "背部",
+    "exercise": "坐姿划船",
+    "sets_raw": "4",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "12",
+    "reps_per_set_estimated": 12,
+    "weight_raw": "15kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-26",
+    "body_part": "背部",
+    "exercise": "颈后高位下拉",
+    "sets_raw": "4",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "12",
+    "reps_per_set_estimated": 12,
+    "weight_raw": "17.5kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-26",
+    "body_part": "背部",
+    "exercise": "宽距高位下拉",
+    "sets_raw": "4",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "10",
+    "reps_per_set_estimated": 10,
+    "weight_raw": "17.5kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-26",
+    "body_part": "背部",
+    "exercise": "辅助引体向上",
+    "sets_raw": "4",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "12",
+    "reps_per_set_estimated": 12,
+    "weight_raw": "55kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-26",
+    "body_part": "背部",
+    "exercise": "单臂高位下拉",
+    "sets_raw": "4*2",
+    "sets_estimated": 8,
+    "reps_per_set_raw": "12",
+    "reps_per_set_estimated": 12,
+    "weight_raw": "11.5kg",
     "notes": ""
   }
 ];

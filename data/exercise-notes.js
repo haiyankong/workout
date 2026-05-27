@@ -52,12 +52,6 @@ window.EXERCISE_NOTES = [
     "id": "肩部",
     "items": [
       {
-        "title": "概览",
-        "summary": "",
-        "html": "<center>\n<video width=\"280\" controls>\n<source src=\"media/肩部动作.mp4\" type=\"video/mp4\">\n</video>\n</center>",
-        "id": "肩部-概览"
-      },
-      {
         "title": "肩外旋 / Band external shoulder rotation",
         "summary": "激活和强化肩袖肌群",
         "html": "<p>目的：激活和强化肩袖肌群</p>\n<p>每侧 4 组，每组 12-20 个</p>\n<ul><li>双脚打开站立，略微比肩膀宽即可，保持稳定</li><li>一侧手正握把手，该侧大臂紧贴躯干，保持稳定不要晃动，握住器械，小臂平行于地面向外展开，初始状态是小臂垂直于身体正面，最终需要外展到小臂垂直于身体侧面</li><li>另一侧手可以背着放，一方面可以保持稳定，另一方面也可以保证该侧肩也处于打开状态</li><li>快拉慢放</li></ul>\n<figure><img src=\"media/弹力带肩外旋.gif\" alt=\"弹力带肩外旋\" style=\"max-width:500px\"><figcaption>弹力带肩外旋</figcaption></figure>\n<h3>动作参考</h3>\n<ul><li><a href=\"https://lyfta.app/zh-CN/ex/6yb\" target=\"_blank\" rel=\"noreferrer\">https://lyfta.app/zh-CN/ex/6yb</a></li></ul>",
@@ -94,12 +88,6 @@ window.EXERCISE_NOTES = [
     "id": "肱二头肌",
     "items": [
       {
-        "title": "概览",
-        "summary": "",
-        "html": "<center>\n<video width=\"280\" controls>\n<source src=\"media/肱二头肌动作.mp4\" type=\"video/mp4\">\n</video>\n</center>",
-        "id": "肱二头肌-概览"
-      },
-      {
         "title": "直臂弯举 / Cable Bicep Curl Standards",
         "summary": "主要锻炼肱二头肌，增强手臂力量和肌肉轮廓。相比自由重量，滑轮提供持续张力，有助于整个动作范围内保持肌肉激活",
         "html": "<p>目的：主要锻炼肱二头肌，增强手臂力量和肌肉轮廓。相比自由重量，滑轮提供持续张力，有助于整个动作范围内保持肌肉激活</p>\n<p>4 组，每组 12 到 20 个</p>\n<ul><li>双脚与髋同宽站立，核心收紧，保持身体稳定</li><li>双手正握直杆，握距略宽于肩或与肩同宽</li><li>抬头挺胸，固定大臂在身体两侧，不借力摆动</li><li>将横杆弯举至胸前，集中收缩肱二头肌</li><li>快提慢放：提起时呼气，控制下放时吸气</li></ul>\n<figure><img src=\"media/直臂弯举.png\" alt=\"直臂弯举\" style=\"max-width:500px\"><figcaption>直臂弯举</figcaption></figure>\n<h3>动作参考</h3>\n<ul><li><a href=\"https://www.youtube.com/watch?v=rfRdD5PKrko\" target=\"_blank\" rel=\"noreferrer\">https://www.youtube.com/watch?v=rfRdD5PKrko</a></li><li><a href=\"https://strengthlevel.com/strength-standards/cable-bicep-curl/lb\" target=\"_blank\" rel=\"noreferrer\">https://strengthlevel.com/strength-standards/cable-bicep-curl/lb</a></li></ul>",
@@ -124,12 +112,6 @@ window.EXERCISE_NOTES = [
     "id": "肱三头肌",
     "items": [
       {
-        "title": "概览",
-        "summary": "",
-        "html": "<center>\n<video width=\"280\" controls>\n<source src=\"media/肱三头肌动作.mp4\" type=\"video/mp4\">\n</video>\n</center>",
-        "id": "肱三头肌-概览"
-      },
-      {
         "title": "绳索三头肌下压 /Cable Triceps Pushdown",
         "summary": "主要锻炼肱三头肌（上臂后侧肌肉），增强手臂推力和线条感，改善肘关节的稳定性和力量",
         "html": "<p>目的：主要锻炼肱三头肌（上臂后侧肌肉），增强手臂推力和线条感，改善肘关节的稳定性和力量</p>\n<p>4 组，每组 12 到 20 个</p>\n<ul><li>手掌朝下抓住杠铃，双手与肩同宽，双脚也与肩同宽</li><li>保持肘部靠近身体并弯曲它们以形成 90 度角，这是起始位置</li><li>伸展肘部并收缩三头肌，将杠铃向下推，大臂不要离开躯干，保持躯干稳定不要晃动</li><li>快拉慢回，慢慢回到起始位置，确保控制动作，不要让配重片在重复次数之间接触</li></ul>\n<figure><img src=\"media/绳索三头肌下压.gif\" alt=\"绳索三头肌下压\" style=\"max-width:500px\"><figcaption>绳索三头肌下压</figcaption></figure>\n<center>\n<video width=\"280\" controls>\n<source src=\"media/绳索三头肌下压.mp4\" type=\"video/mp4\">\n</video>\n</center>\n<h3>动作参考</h3>\n<ul><li><a href=\"https://lyfta.app/zh-CN/ex/6g5\" target=\"_blank\" rel=\"noreferrer\">https://lyfta.app/zh-CN/ex/6g5</a></li></ul>",
@@ -147,12 +129,6 @@ window.EXERCISE_NOTES = [
     "title": "背部 / Back",
     "id": "背部",
     "items": [
-      {
-        "title": "概览",
-        "summary": "",
-        "html": "<center>\n<video width=\"280\" controls>\n<source src=\"media/背部动作.mp4\" type=\"video/mp4\">\n</video>\n</center>",
-        "id": "背部-概览"
-      },
       {
         "title": "辅助引体向上 / Assisted Pull-up",
         "summary": "增强背阔肌、二头肌和肩部的力量与耐力",
@@ -280,12 +256,6 @@ window.EXERCISE_NOTES = [
     "id": "臀腿",
     "items": [
       {
-        "title": "概览",
-        "summary": "",
-        "html": "<center>\n<video width=\"280\" controls>\n<source src=\"media/腿部动作.mp4\" type=\"video/mp4\">\n</video>\n</center>",
-        "id": "臀腿-概览"
-      },
-      {
         "title": "概述",
         "summary": "",
         "html": "<ul><li>髋部 / Hips：包含多种结构，不只是肌肉</li><li>臀肌 / Glutes</li><li>髋关节</li><li>髋屈肌群（如髂腰肌 / Iliopsoas）</li><li>关节囊、韧带、股骨头周围软组织</li><li>臀肌 / Glutes</li><li>臀大肌 / Gluteus Maximus：主要负责髋部伸展、外旋</li><li>臀中肌 / Gluteus Medius：负责髋外展、稳定骨盆</li><li>臀小肌 / Gluteus Minimus：深层肌，协助臀中肌进行外展与稳定</li><li>大腿肌肉 / Thighs</li><li>股四头肌或者大腿前侧 / Quadriceps：伸展膝盖，如深蹲起身、腿举等动作</li><li>股二头肌群或者大腿后侧 / Hamstrings：屈膝、伸髋，如硬拉、腿弯举</li><li>大腿内侧 / Adductors：大腿内收，如内收机、相扑深蹲等</li><li>大腿外侧 / Abductors：大腿外展，如侧抬腿、弹力带走路</li><li>小腿肌肉</li><li>小腿前侧 / Tibialis Anterior：背屈脚踝（脚尖向上），控制落地缓冲</li><li>小腿后侧 / Calves</li><li>腓肠肌 / Gastrocnemius：参与爆发力动作（跳跃）</li><li>比目鱼肌 / Soleus：负责耐力、站立稳定</li></ul>\n<div class=\"markdown-table\"><table><thead><tr><th>部位</th><th>英文</th><th>chatGPT 推荐的训练动作</th><th>器械 / 方式</th></tr></thead><tbody><tr><td>臀大肌</td><td>Gluteus Maximus</td><td>臀桥（Hip Thrust）  、罗马尼亚硬拉（Romanian Deadlift）、弓步蹲（Lunges）</td><td>壶铃、杠铃、杠铃垫</td></tr><tr><td>臀中/小肌</td><td>Gluteus Medius/Minimus</td><td>側抬腿（Side-Lying Leg Raise）、怪兽走（Monster Walk）、弹力带外展</td><td>弹力带、徒手</td></tr><tr><td>髋屈肌</td><td>Hip Flexors</td><td>抬腿（Leg Raise）、高抬腿跑（High Knees）</td><td>徒手、拉力器</td></tr><tr><td>股四头肌</td><td>Quadriceps</td><td>深蹲（Squat）、腿举（Leg Press）、坐姿腿伸展（Leg Extension）</td><td>史密斯机、腿举机、固定器械</td></tr><tr><td>股二头肌群</td><td>Hamstrings</td><td>罗马尼亚硬拉（RDL）、俯身腿弯举（Lying Leg Curl）</td><td>杠铃、腿弯举机</td></tr><tr><td>大腿内侧肌</td><td>Adductors</td><td>相扑深蹲（Sumo Squat）、内收训练器（Adductor Machine）</td><td>史密斯机、内收机</td></tr><tr><td>大腿外侧肌</td><td>Abductors</td><td>弹力带外展、侧抬腿、外展训练器（Abductor Machine）</td><td>弹力带、外展机</td></tr><tr><td>小腿后侧肌群</td><td>Calves</td><td>踮脚提踵（Standing/Sitting Calf Raise）、跳绳</td><td>自重、提踵机、哑铃</td></tr><tr><td>小腿前侧肌肉</td><td>Tibialis Anterior</td><td>脚尖上提训练（Toe Raises）、负重背屈练习</td><td>徒手、脚背拉力器</td></tr></tbody></table></div>",
@@ -354,7 +324,7 @@ window.EXERCISE_NOTES = [
       {
         "title": "哑铃保加利亚分腿深蹲 / Dumbbell Bulgarian Split Squat",
         "summary": "强化股四头肌、臀大肌和腘绳肌，提升单侧下肢力量与稳定性，增强核心控制，改善身体平衡和运动协调性",
-        "html": "<p>目的：强化股四头肌、臀大肌和腘绳肌，提升单侧下肢力量与稳定性，增强核心控制，改善身体平衡和运动协调性</p>\n<p>每侧各 4 组，每组 12 到 20 个</p>\n<ul><li>先坐着，把左腿伸直，然后起身站起来，左脚就放在原本坐着的左腿位置</li><li>右腿搭在后面座椅上，注意只是搭着就可以，不要完全把右腿放在座椅上</li><li>左手放在左臀，右手拿着哑铃</li><li>保持腰背挺直，右胳膊放在左脚的前侧，然后往下放，身体往下压，但是注意左腿的膝盖不要往前弓，要往后送左臀，动作幅度大一些</li><li>然后反过来做另外的腿</li></ul>\n<figure><img src=\"media/哑铃保加利亚分腿深蹲.gif\" alt=\"哑铃保加利亚分腿深蹲\" style=\"max-width:500px\"><figcaption>哑铃保加利亚分腿深蹲</figcaption></figure>\n<center>\n<video width=\"280\" controls>\n<source src=\"media/哑铃保加利亚分腿深蹲.mp4\" type=\"video/mp4\">\n</video>\n</center>\n<center>\n<video width=\"280\" controls>\n<source src=\"media/哑铃保加利亚分腿深蹲2.mp4\" type=\"video/mp4\">\n</video>\n</center>\n<h3>动作参考</h3>\n<ul><li><a href=\"https://lyfta.app/zh-CN/ex/7v6\" target=\"_blank\" rel=\"noreferrer\">https://lyfta.app/zh-CN/ex/7v6</a></li></ul>",
+        "html": "<p>目的：强化股四头肌、臀大肌和腘绳肌，提升单侧下肢力量与稳定性，增强核心控制，改善身体平衡和运动协调性</p>\n<p>每侧各 4 组，每组 12 到 20 个</p>\n<p><strong>准备姿势</strong></p>\n<ul><li>找一个高度 45–55 cm 的普通长凳</li><li>坐在凳子边缘，把左腿伸直，然后起身站起来，左脚落在原来坐着时左腿的位置，另一个判断标准：下蹲到底时，前脚小腿接近垂直地面</li><li>右脚脚背轻搭在凳面上，只是搭着，不要把整条腿放上去</li><li>双脚不在同一条线，要微微分开，保持自然平衡</li><li>双手各持一个哑铃，自然垂于身体两侧 / 右手握住哑铃，左手放在左侧臀部</li></ul>\n<p><strong>下蹲</strong></p>\n<ul><li>保持腰背中立挺直，用 2–3 秒慢慢下蹲，下蹲时吸气</li><li>左腿膝盖不要往前顶，而是主动把左侧臀部往后往下送，动作幅度尽量大</li><li>根据训练目的调整躯干角度：</li><li>练臀就髋关节主动前折，躯干略微前倾 10–20°；</li><li>练大腿前侧就保持躯干直立。</li><li>但是注意前倾是髋部折叠，腰背始终不能塌</li><li>下蹲到左侧大腿平行地面，到底时稍作停顿</li></ul>\n<p><strong>起身</strong></p>\n<ul><li>意识上用左脚脚跟往下踩地发力，呼气起身</li><li>起身时不要靠惯性弹起，保持控制，身体不要站直，类比器械倒蹬</li></ul>\n<p><strong>换边</strong></p>\n<ul><li>换腿交替</li></ul>\n<figure><img src=\"media/哑铃保加利亚分腿深蹲.gif\" alt=\"哑铃保加利亚分腿深蹲\" style=\"max-width:500px\"><figcaption>哑铃保加利亚分腿深蹲</figcaption></figure>\n<center>\n<video width=\"280\" controls>\n<source src=\"media/哑铃保加利亚分腿深蹲.mp4\" type=\"video/mp4\">\n</video>\n</center>\n<center>\n<video width=\"280\" controls>\n<source src=\"media/哑铃保加利亚分腿深蹲2.mp4\" type=\"video/mp4\">\n</video>\n</center>\n<h3>动作参考</h3>\n<ul><li><a href=\"https://lyfta.app/zh-CN/ex/7v6\" target=\"_blank\" rel=\"noreferrer\">https://lyfta.app/zh-CN/ex/7v6</a></li></ul>",
         "id": "臀腿-哑铃保加利亚分腿深蹲"
       },
       {

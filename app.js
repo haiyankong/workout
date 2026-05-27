@@ -1,12 +1,13 @@
 const notes = Array.isArray(window.EXERCISE_NOTES) ? window.EXERCISE_NOTES : [];
 const trainingLog = Array.isArray(window.TRAINING_LOG)
-  ? window.TRAINING_LOG.map((row) => ({
+  ? window.TRAINING_LOG.map((row, index) => ({
       ...row,
+      row_index: index,
       sets_estimated: Number(row.sets_estimated) || 0,
       reps_per_set_estimated: Number(row.reps_per_set_estimated) || 0
     }))
   : [];
-const currentPlan = window.CURRENT_PLAN || { title: "当前训练计划", html: "" };
+const currentPlan = window.CURRENT_PLAN || { title: "Current Plan", html: "" };
 
 const state = {
   view: "library",
@@ -47,9 +48,10 @@ const elements = {
 };
 
 const numberFormat = new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 1 });
+const historyPreviewLimit = 8;
 
 function cleanTitle(title) {
-  return String(title || "").replace(/\s*\/\s*.+$/, "").trim();
+  return String(title || "").trim();
 }
 
 function formatNumber(value) {
@@ -125,7 +127,7 @@ function populateLevelTwo() {
 
   const defaultOption = document.createElement("option");
   defaultOption.value = "";
-  defaultOption.textContent = section ? "全部具体动作" : "先选择项目大类";
+  defaultOption.textContent = section ? "All exercises" : "Select a category first";
   elements.levelTwoSelect.appendChild(defaultOption);
   elements.levelTwoSelect.disabled = !section;
 
@@ -142,7 +144,7 @@ function populateLevelTwo() {
 function renderDirectory() {
   const sections = state.levelOne ? [selectedSection()].filter(Boolean) : notes;
   elements.directoryList.replaceChildren();
-  elements.directoryMeta.textContent = state.levelOne ? "已筛选" : "全部";
+  elements.directoryMeta.textContent = state.levelOne ? "Filtered" : "All";
 
   sections.forEach((section) => {
     const wrapper = document.createElement("section");
@@ -159,7 +161,7 @@ function renderDirectory() {
     });
 
     const meta = document.createElement("span");
-    meta.textContent = `${section.items.length} 个具体动作`;
+    meta.textContent = `${section.items.length} exercises`;
 
     const itemList = document.createElement("div");
     itemList.className = "directory-items";
@@ -207,7 +209,7 @@ function renderOverview() {
     card.type = "button";
     card.innerHTML = `
       <h3>${escapeHtml(cleanTitle(section.title))}</h3>
-      <p>${section.items.length} 个具体动作</p>
+      <p>${section.items.length} exercises</p>
     `;
     card.addEventListener("click", () => {
       state.levelOne = section.id;
@@ -221,8 +223,8 @@ function renderOverview() {
   elements.readerPanel.innerHTML = `
     <div class="reader-title">
       <div>
-        <h2>全部项目大类</h2>
-        <p>共 ${notes.length} 个项目大类，${allItems().length} 个具体动作</p>
+        <h2>All Categories</h2>
+        <p>${notes.length} categories, ${allItems().length} exercises</p>
       </div>
     </div>
   `;
@@ -238,7 +240,7 @@ function renderSection(section) {
     <div class="reader-title">
       <div>
         <h2>${escapeHtml(cleanTitle(section.title))}</h2>
-        <p>${section.items.length} 个具体动作</p>
+        <p>${section.items.length} exercises</p>
       </div>
     </div>
   `;
@@ -258,7 +260,7 @@ function renderItem(section, item) {
 }
 
 function renderPlan() {
-  elements.planDocument.innerHTML = currentPlan.html || '<p class="empty">暂无训练计划</p>';
+  elements.planDocument.innerHTML = currentPlan.html || '<p class="empty">No plan yet</p>';
 }
 
 function renderLibrary() {
@@ -314,7 +316,7 @@ function renderRanks(items) {
     const safeName = escapeHtml(item.name);
     row.innerHTML = `
       <span class="rank-name" title="${safeName}">${safeName}</span>
-      <span class="rank-count">${formatNumber(item.value)} 组</span>
+      <span class="rank-count">${formatNumber(item.value)} sets</span>
     `;
     elements.topExercises.appendChild(row);
   });
@@ -379,34 +381,36 @@ function renderHistoryStats(items) {
 function renderHistoryOverview(items) {
   const byPart = [...groupBy(items, (row) => row.body_part, (row) => row.sets_estimated)]
     .map(([name, value]) => ({ name, value }))
-    .sort(byCountThenName);
+    .sort(byCountThenName)
+    .slice(0, historyPreviewLimit);
   const byMonth = [...groupBy(items, (row) => monthLabel(row.date), (row) => row.sets_estimated)]
     .map(([name, value]) => ({ name, value }))
-    .sort((a, b) => a.name.localeCompare(b.name));
+    .sort((a, b) => b.name.localeCompare(a.name))
+    .slice(0, historyPreviewLimit);
   const top = [...groupBy(items, (row) => row.exercise, (row) => row.sets_estimated)]
     .map(([name, value]) => ({ name, value }))
     .sort(byCountThenName)
-    .slice(0, 8);
+    .slice(0, historyPreviewLimit);
 
-  renderBars(elements.bodyPartChart, byPart, { suffix: " 组" });
-  renderBars(elements.monthChart, byMonth, { suffix: " 组" });
+  renderBars(elements.bodyPartChart, byPart, { suffix: " sets" });
+  renderBars(elements.monthChart, byMonth, { suffix: " sets" });
   renderRanks(top);
 
-  elements.bodyPartTotal.textContent = `${formatNumber(sumSets(items))} 组`;
-  elements.monthTotal.textContent = `${formatNumber(sumSets(items))} 组`;
-  elements.exerciseTotal.textContent = `${unique(items.map((row) => row.exercise)).length} 个`;
+  elements.bodyPartTotal.textContent = `${formatNumber(byPart.reduce((sum, item) => sum + item.value, 0))} sets`;
+  elements.monthTotal.textContent = `${formatNumber(byMonth.reduce((sum, item) => sum + item.value, 0))} sets`;
+  elements.exerciseTotal.textContent = `${unique(items.map((row) => row.exercise)).length} exercises`;
 }
 
 function renderHistoryTable(items) {
   const sorted = [...items].sort((a, b) => {
     const dateCompare = b.date.localeCompare(a.date);
     if (dateCompare !== 0) return dateCompare;
-    return b.source_order - a.source_order;
+    return b.row_index - a.row_index;
   });
 
   elements.logRows.replaceChildren();
   elements.emptyState.hidden = sorted.length > 0;
-  elements.visibleRows.textContent = `${sorted.length} 条`;
+  elements.visibleRows.textContent = `${sorted.length} records`;
 
   const fragment = document.createDocumentFragment();
   sorted.forEach((row) => {

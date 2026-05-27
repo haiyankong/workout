@@ -221,7 +221,7 @@ function parseExerciseNotes(markdown) {
       return;
     }
 
-    const title = "概览";
+    const title = "Overview";
     currentSection.items.push({
       title,
       summary: sectionBuffer.find((line) => line.trim().startsWith("目的："))?.replace(/^\s*目的：\s*/, "").trim() || "",
@@ -305,6 +305,10 @@ function normalizeDate(value) {
   const text = String(value || "").trim();
   const zh = text.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
   if (zh) return `${zh[1]}-${zh[2].padStart(2, "0")}-${zh[3].padStart(2, "0")}`;
+  const slash = text.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (slash) return `${slash[3]}-${slash[1].padStart(2, "0")}-${slash[2].padStart(2, "0")}`;
+  const iso = text.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  if (iso) return `${iso[1]}-${iso[2].padStart(2, "0")}-${iso[3].padStart(2, "0")}`;
   return text;
 }
 
@@ -333,11 +337,11 @@ function normalizeTrainingLog(csvText) {
 
   const normalized = rows.map((values, index) => {
     const row = Object.fromEntries(headers.map((header, i) => [header, values[i] || ""]));
-    const date = normalizeDate(isChinese ? row["日期"] : row.date);
+    const rawDate = isChinese ? row["日期"] : row.date;
+    const date = normalizeDate(rawDate);
     const setsRaw = isChinese ? row["组数"] : row.sets_raw;
     const repsRaw = isChinese ? row["次数/组"] : row.reps_per_set_raw;
-    return {
-      source_order: Number(row.source_order) || index + 1,
+    const entry = {
       date,
       body_part: (isChinese ? row["部位"] : row.body_part || "").trim(),
       exercise: (isChinese ? row["动作"] : row.exercise || "").trim(),
@@ -348,22 +352,27 @@ function normalizeTrainingLog(csvText) {
       weight_raw: String(isChinese ? row["重量"] : row.weight_raw || "").trim(),
       notes: String(isChinese ? row["备注"] : row.notes || "").trim()
     };
+    Object.defineProperties(entry, {
+      csv_date: { value: String(rawDate || date).trim(), enumerable: false },
+      sort_order: { value: index + 1, enumerable: false }
+    });
+    return entry;
   });
 
   return normalized.sort((a, b) => {
     const dateCompare = a.date.localeCompare(b.date);
-    return dateCompare || a.source_order - b.source_order;
+    return dateCompare || a.sort_order - b.sort_order;
   });
 }
 
 function trainingCsv(rows) {
-  const headers = ["source_order", "date", "body_part", "exercise", "sets_raw", "sets_estimated", "reps_per_set_raw", "reps_per_set_estimated", "weight_raw", "notes"];
-  return [headers.join(","), ...rows.map((row) => headers.map((header) => csvEscape(row[header])).join(","))].join("\r\n") + "\r\n";
+  const headers = ["date", "body_part", "exercise", "sets_raw", "sets_estimated", "reps_per_set_raw", "reps_per_set_estimated", "weight_raw", "notes"];
+  return [headers.join(","), ...rows.map((row) => headers.map((header) => csvEscape(header === "date" ? row.csv_date || row.date : row[header])).join(","))].join("\r\n") + "\r\n";
 }
 
 function parsePlan(markdown) {
   const lines = markdown.split(/\r?\n/);
-  const title = lines.find((line) => line.startsWith("# "))?.replace(/^#\s+/, "").trim() || "当前训练计划";
+  const title = lines.find((line) => line.startsWith("# "))?.replace(/^#\s+/, "").trim() || "Current Plan";
   return {
     title,
     html: renderMarkdownLines(lines)
@@ -385,4 +394,4 @@ const logRows = normalizeTrainingLog(await fs.readFile(path.join(root, "data", "
 await fs.writeFile(path.join(root, "data", "training-log.csv"), `\uFEFF${trainingCsv(logRows)}`, "utf8");
 await fs.writeFile(path.join(root, "data", "training-data.js"), `window.TRAINING_LOG = ${JSON.stringify(logRows, null, 2)};\n`, "utf8");
 
-console.log(`Rebuilt Workout HUB: ${exerciseNotes.length} categories, ${exerciseNotes.reduce((sum, section) => sum + section.items.length, 0)} actions, ${logRows.length} training rows.`);
+console.log(`Rebuilt Workout: ${exerciseNotes.length} categories, ${exerciseNotes.reduce((sum, section) => sum + section.items.length, 0)} actions, ${logRows.length} training rows.`);
