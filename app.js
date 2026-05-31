@@ -25,16 +25,17 @@ const elements = {
   directoryList: $("#directoryList"),
   readerPanel: $("#readerPanel"),
   planDocument: $("#planDocument"),
+  calendarTotal: $("#calendarTotal"),
+  calendarActiveDays: $("#calendarActiveDays"),
+  calendarBestCount: $("#calendarBestCount"),
+  calendarLongestStreak: $("#calendarLongestStreak"),
+  calendarYears: $("#calendarYears"),
   startDate: $("#startDate"),
   endDate: $("#endDate"),
   bodyPart: $("#bodyPart"),
   exerciseSearch: $("#exerciseSearch"),
   resetFilters: $("#resetFilters"),
   exerciseOptions: $("#exerciseOptions"),
-  statRecords: $("#statRecords"),
-  statDays: $("#statDays"),
-  statSets: $("#statSets"),
-  statReps: $("#statReps"),
   bodyPartChart: $("#bodyPartChart"),
   monthChart: $("#monthChart"),
   topExercises: $("#topExercises"),
@@ -49,6 +50,7 @@ const elements = {
 
 const numberFormat = new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 1 });
 const historyPreviewLimit = 8;
+const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 function cleanTitle(title) {
   return String(title || "").trim();
@@ -97,6 +99,203 @@ function groupBy(items, getKey, getValue = () => 1) {
 
 function monthLabel(date) {
   return date.slice(0, 7);
+}
+
+function parseDateKey(dateKey) {
+  const [year, month, day] = String(dateKey || "")
+    .split("-")
+    .map(Number);
+  if (!year || !month || !day) return null;
+  return new Date(Date.UTC(year, month - 1, day));
+}
+
+function formatDateKey(date) {
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(date.getUTCDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function addDays(date, days) {
+  const next = new Date(date.getTime());
+  next.setUTCDate(next.getUTCDate() + days);
+  return next;
+}
+
+function startOfWeek(date) {
+  return addDays(date, -date.getUTCDay());
+}
+
+function endOfWeek(date) {
+  return addDays(date, 6 - date.getUTCDay());
+}
+
+function formatDateLabel(dateKey) {
+  const date = typeof dateKey === "string" ? parseDateKey(dateKey) : dateKey;
+  if (!date) return "";
+  return `${monthNames[date.getUTCMonth()]} ${date.getUTCDate()}, ${date.getUTCFullYear()}`;
+}
+
+function contributionLevel(count) {
+  if (!count) return 0;
+  return Math.min(count, 4);
+}
+
+function contributionText(count, dateKey) {
+  const contribution = count === 1 ? "contribution" : "contributions";
+  return `${count} ${contribution} on ${formatDateLabel(dateKey)}`;
+}
+
+function longestContributionStreak(dateCounts) {
+  const activeDates = [...dateCounts.keys()].sort();
+  let longest = 0;
+  let current = 0;
+  let previousDate = null;
+
+  activeDates.forEach((dateKey) => {
+    const date = parseDateKey(dateKey);
+    if (!date) return;
+    const followsPrevious = previousDate && formatDateKey(addDays(previousDate, 1)) === dateKey;
+    current = followsPrevious ? current + 1 : 1;
+    longest = Math.max(longest, current);
+    previousDate = date;
+  });
+
+  return longest;
+}
+
+function renderCalendarMonths(container, weeks, year) {
+  container.replaceChildren();
+  container.style.gridTemplateColumns = `repeat(${weeks.length}, var(--calendar-cell-size))`;
+
+  const fragment = document.createDocumentFragment();
+  weeks.forEach((weekStart) => {
+    const label = document.createElement("span");
+    const monthStart = Array.from({ length: 7 }, (_, day) => addDays(weekStart, day)).find((date) => {
+      return date.getUTCFullYear() === year && date.getUTCDate() === 1;
+    });
+
+    if (monthStart) {
+      label.textContent = monthNames[monthStart.getUTCMonth()];
+    }
+
+    fragment.appendChild(label);
+  });
+
+  container.appendChild(fragment);
+}
+
+function renderContributionGrid(grid, months, dateCounts, year) {
+  const firstDate = new Date(Date.UTC(year, 0, 1));
+  const lastDate = new Date(Date.UTC(year, 11, 31));
+  const calendarStart = startOfWeek(firstDate);
+  const calendarEnd = endOfWeek(lastDate);
+  const weeks = [];
+
+  for (let cursor = calendarStart; cursor <= calendarEnd; cursor = addDays(cursor, 7)) {
+    weeks.push(cursor);
+  }
+
+  renderCalendarMonths(months, weeks, year);
+
+  grid.replaceChildren();
+  grid.style.gridTemplateColumns = `repeat(${weeks.length}, var(--calendar-cell-size))`;
+
+  const fragment = document.createDocumentFragment();
+  weeks.forEach((weekStart) => {
+    for (let day = 0; day < 7; day += 1) {
+      const date = addDays(weekStart, day);
+      const dateKey = formatDateKey(date);
+      const isInYear = date.getUTCFullYear() === year;
+      const count = isInYear ? dateCounts.get(dateKey) || 0 : 0;
+      const cell = document.createElement("span");
+      const label = contributionText(count, dateKey);
+      cell.className = `contribution-cell level-${contributionLevel(count)}${isInYear ? "" : " is-outside-year"}`;
+
+      if (isInYear) {
+        cell.setAttribute("role", "gridcell");
+        cell.setAttribute("tabindex", "0");
+        cell.setAttribute("aria-label", label);
+        cell.title = label;
+      } else {
+        cell.setAttribute("aria-hidden", "true");
+      }
+
+      fragment.appendChild(cell);
+    }
+  });
+
+  grid.appendChild(fragment);
+}
+
+function renderYearCalendar(year, dateCounts) {
+  const yearKey = String(year);
+  const yearEntries = [...dateCounts.entries()].filter(([dateKey]) => dateKey.startsWith(`${yearKey}-`));
+  const total = yearEntries.reduce((sum, [, count]) => sum + count, 0);
+  const activeDays = yearEntries.length;
+  const panel = document.createElement("section");
+  panel.className = "panel contribution-panel";
+  panel.setAttribute("aria-label", `${year} training contribution calendar`);
+  panel.innerHTML = `
+    <div class="panel-heading calendar-heading">
+      <div>
+        <h2>${escapeHtml(yearKey)}</h2>
+        <p>${formatNumber(total)} contributions across ${formatNumber(activeDays)} active days</p>
+      </div>
+    </div>
+
+    <div class="contribution-scroll">
+      <div class="contribution-months" aria-hidden="true"></div>
+      <div class="contribution-body">
+        <div class="contribution-weekdays" aria-hidden="true">
+          <span></span>
+          <span>Mon</span>
+          <span></span>
+          <span>Wed</span>
+          <span></span>
+          <span>Fri</span>
+          <span></span>
+        </div>
+        <div class="contribution-grid" role="grid" aria-label="${escapeHtml(yearKey)} training contributions by day"></div>
+      </div>
+    </div>
+  `;
+
+  renderContributionGrid(
+    panel.querySelector(".contribution-grid"),
+    panel.querySelector(".contribution-months"),
+    dateCounts,
+    year
+  );
+
+  return panel;
+}
+
+function renderCalendar() {
+  const dateCounts = groupBy(trainingLog, (row) => row.date);
+  const dates = [...dateCounts.keys()].sort();
+
+  elements.calendarTotal.textContent = formatNumber(trainingLog.length);
+  elements.calendarActiveDays.textContent = formatNumber(dates.length);
+  elements.calendarLongestStreak.textContent = formatNumber(longestContributionStreak(dateCounts));
+
+  if (!dates.length) {
+    elements.calendarBestCount.textContent = "0";
+    elements.calendarYears.innerHTML = '<section class="panel empty">No training data</section>';
+    return;
+  }
+
+  const [, bestCount] = [...dateCounts.entries()].sort((a, b) => b[1] - a[1] || b[0].localeCompare(a[0]))[0];
+  const years = unique(dates.map((dateKey) => Number(dateKey.slice(0, 4))))
+    .filter(Boolean)
+    .sort((a, b) => b - a);
+
+  elements.calendarBestCount.textContent = formatNumber(bestCount);
+  elements.calendarYears.replaceChildren();
+
+  years.forEach((year) => {
+    elements.calendarYears.appendChild(renderYearCalendar(year, dateCounts));
+  });
 }
 
 function allItems() {
@@ -290,7 +489,7 @@ function syncControls() {
 function createBarRow({ name, value, max, suffix = "" }) {
   const row = document.createElement("div");
   row.className = "bar-row";
-  const width = max > 0 ? Math.max((value / max) * 100, 3) : 0;
+  const width = max > 0 ? (value / max) * 100 : 0;
   const safeName = escapeHtml(name);
   row.innerHTML = `
     <span class="bar-label" title="${safeName}">${safeName}</span>
@@ -367,17 +566,6 @@ function filteredHistoryRows() {
   });
 }
 
-function renderHistoryStats(items) {
-  const days = unique(items.map((row) => row.date)).length;
-  const sets = sumSets(items);
-  const reps = estimateReps(items);
-
-  elements.statRecords.textContent = formatNumber(items.length);
-  elements.statDays.textContent = formatNumber(days);
-  elements.statSets.textContent = formatNumber(sets);
-  elements.statReps.textContent = formatNumber(reps);
-}
-
 function renderHistoryOverview(items) {
   const byPart = [...groupBy(items, (row) => row.body_part, (row) => row.sets_estimated)]
     .map(([name, value]) => ({ name, value }))
@@ -431,7 +619,6 @@ function renderHistoryTable(items) {
 
 function renderHistory() {
   const items = filteredHistoryRows();
-  renderHistoryStats(items);
   renderHistoryOverview(items);
   renderHistoryTable(items);
 }
@@ -489,6 +676,7 @@ populateSelectors();
 syncControls();
 renderLibrary();
 renderPlan();
+renderCalendar();
 populateHistoryFilters();
 renderHistory();
 elements.copyrightYear.textContent = new Date().getFullYear();

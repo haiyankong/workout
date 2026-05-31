@@ -21,6 +21,7 @@
       <nav class="tabs" aria-label="Pages">
         <button class="tab is-active" type="button" data-view="library">Library</button>
         <button class="tab" type="button" data-view="plan">Plan</button>
+        <button class="tab" type="button" data-view="calendar">Calendar</button>
         <button class="tab" type="button" data-view="history">History</button>
       </nav>
 
@@ -60,6 +61,29 @@
         </article>
       </section>
 
+      <section class="view" id="calendarView">
+        <section class="stats-grid calendar-stats" aria-label="Training contribution summary">
+          <article class="stat-tile">
+            <span>Contributions</span>
+            <strong id="calendarTotal">0</strong>
+          </article>
+          <article class="stat-tile">
+            <span>Active days</span>
+            <strong id="calendarActiveDays">0</strong>
+          </article>
+          <article class="stat-tile">
+            <span>Best day</span>
+            <strong id="calendarBestCount">0</strong>
+          </article>
+          <article class="stat-tile">
+            <span>Longest streak</span>
+            <strong id="calendarLongestStreak">0</strong>
+          </article>
+        </section>
+
+        <div class="calendar-years" id="calendarYears"></div>
+      </section>
+
       <section class="view" id="historyView">
         <section class="history-toolbar" aria-label="Filters">
           <label>
@@ -84,25 +108,6 @@
           <button class="icon-button" id="resetFilters" type="button" title="Reset filters" aria-label="Reset filters">
             ×
           </button>
-        </section>
-
-        <section class="stats-grid" aria-label="Training overview">
-          <article class="stat-tile">
-            <span>Records</span>
-            <strong id="statRecords">0</strong>
-          </article>
-          <article class="stat-tile">
-            <span>Training days</span>
-            <strong id="statDays">0</strong>
-          </article>
-          <article class="stat-tile">
-            <span>Total sets</span>
-            <strong id="statSets">0</strong>
-          </article>
-          <article class="stat-tile">
-            <span>Estimated reps</span>
-            <strong id="statReps">0</strong>
-          </article>
         </section>
 
         <section class="overview-grid" aria-label="Training charts">

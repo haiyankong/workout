@@ -400,6 +400,115 @@ button:focus-visible {
   min-width: 640px;
 }
 
+.calendar-heading {
+  align-items: flex-start;
+}
+
+.calendar-heading p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.calendar-years {
+  display: grid;
+  gap: 16px;
+}
+
+.contribution-panel {
+  overflow: hidden;
+}
+
+.contribution-scroll {
+  --calendar-cell-size: 14px;
+  --calendar-cell-gap: 4px;
+  overflow-x: auto;
+  padding: 4px 2px 8px;
+}
+
+.contribution-months {
+  display: grid;
+  gap: var(--calendar-cell-gap);
+  margin-left: 42px;
+  margin-bottom: 6px;
+  min-width: max-content;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.contribution-months span {
+  min-width: var(--calendar-cell-size);
+  height: 18px;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.contribution-body {
+  display: flex;
+  gap: 8px;
+  min-width: max-content;
+}
+
+.contribution-weekdays {
+  flex: 0 0 34px;
+  display: grid;
+  grid-template-rows: repeat(7, var(--calendar-cell-size));
+  gap: var(--calendar-cell-gap);
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: var(--calendar-cell-size);
+  text-align: right;
+}
+
+.contribution-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, var(--calendar-cell-size));
+  gap: var(--calendar-cell-gap);
+  min-width: max-content;
+}
+
+.contribution-cell {
+  width: var(--calendar-cell-size);
+  height: var(--calendar-cell-size);
+  display: block;
+  border: 1px solid rgba(23, 27, 24, 0.08);
+  border-radius: 3px;
+  background: #e8eeea;
+}
+
+.contribution-cell[tabindex="0"] {
+  cursor: default;
+}
+
+.contribution-cell[tabindex="0"]:focus-visible {
+  outline: 3px solid rgba(40, 124, 120, 0.2);
+  outline-offset: 2px;
+}
+
+.contribution-cell.level-1 {
+  background: #bfe5ce;
+}
+
+.contribution-cell.level-2 {
+  background: #75c79c;
+}
+
+.contribution-cell.level-3 {
+  background: #2d9a82;
+}
+
+.contribution-cell.level-4 {
+  background: #176f63;
+}
+
+.contribution-cell.is-outside-year {
+  border-color: transparent;
+  background: transparent;
+}
+
 .history-header {
   display: flex;
   align-items: flex-end;
@@ -536,16 +645,9 @@ button:focus-visible {
 .bar-fill {
   width: var(--bar-width);
   height: 100%;
+  display: block;
   border-radius: inherit;
-  background: var(--teal);
-}
-
-.bar-row:nth-child(2n) .bar-fill {
-  background: var(--coral);
-}
-
-.bar-row:nth-child(3n) .bar-fill {
-  background: var(--amber);
+  background: #c8614b;
 }
 
 .bar-value {
@@ -687,7 +789,7 @@ th {
 
   .tabs {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .tab {
@@ -711,6 +813,11 @@ th {
     width: 100%;
     justify-content: center;
     white-space: normal;
+  }
+
+  .calendar-heading {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .bar-row,

@@ -332,7 +332,7 @@ window.TRAINING_LOG = [
   {
     "date": "2025-03-21",
     "body_part": "肩部",
-    "exercise": "肩外旋",
+    "exercise": "绳索肩外旋",
     "sets_raw": "3*2",
     "sets_estimated": 6,
     "reps_per_set_raw": "—",
@@ -420,7 +420,7 @@ window.TRAINING_LOG = [
   {
     "date": "2025-03-27",
     "body_part": "肩部",
-    "exercise": "肩外旋",
+    "exercise": "绳索肩外旋",
     "sets_raw": "3*2",
     "sets_estimated": 6,
     "reps_per_set_raw": "12",
@@ -959,7 +959,7 @@ window.TRAINING_LOG = [
   {
     "date": "2025-06-16",
     "body_part": "肩部",
-    "exercise": "肩外旋",
+    "exercise": "绳索肩外旋",
     "sets_raw": "4*2",
     "sets_estimated": 8,
     "reps_per_set_raw": "15",
@@ -992,7 +992,7 @@ window.TRAINING_LOG = [
   {
     "date": "2025-06-18",
     "body_part": "肩部",
-    "exercise": "肩外旋",
+    "exercise": "绳索肩外旋",
     "sets_raw": "4*2",
     "sets_estimated": 8,
     "reps_per_set_raw": "15",
@@ -1256,7 +1256,7 @@ window.TRAINING_LOG = [
   {
     "date": "2025-07-10",
     "body_part": "肩部",
-    "exercise": "肩外旋",
+    "exercise": "绳索肩外旋",
     "sets_raw": "4*2",
     "sets_estimated": 8,
     "reps_per_set_raw": "3",
@@ -1988,6 +1988,105 @@ window.TRAINING_LOG = [
     "reps_per_set_raw": "12",
     "reps_per_set_estimated": 12,
     "weight_raw": "11.5kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-28",
+    "body_part": "臀腿",
+    "exercise": "坐姿髋内收",
+    "sets_raw": "4",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "15",
+    "reps_per_set_estimated": 15,
+    "weight_raw": "23kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-28",
+    "body_part": "臀腿",
+    "exercise": "坐姿款外展",
+    "sets_raw": "4",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "15",
+    "reps_per_set_estimated": 15,
+    "weight_raw": "27kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-28",
+    "body_part": "臀腿",
+    "exercise": "坐姿腿弯举",
+    "sets_raw": "4",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "15",
+    "reps_per_set_estimated": 15,
+    "weight_raw": "14kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-28",
+    "body_part": "臀腿",
+    "exercise": "哑铃保加利亚分腿深蹲",
+    "sets_raw": "2*2",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "8",
+    "reps_per_set_estimated": 8,
+    "weight_raw": "0kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-28",
+    "body_part": "臀腿",
+    "exercise": "坐姿腿屈伸",
+    "sets_raw": "4",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "8",
+    "reps_per_set_estimated": 8,
+    "weight_raw": "14kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-30",
+    "body_part": "肱三头肌",
+    "exercise": "绳索下压",
+    "sets_raw": "4",
+    "sets_estimated": 4,
+    "reps_per_set_raw": "18",
+    "reps_per_set_estimated": 18,
+    "weight_raw": "3.4kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-30",
+    "body_part": "肩部",
+    "exercise": "绳索肩外旋",
+    "sets_raw": "8*2",
+    "sets_estimated": 16,
+    "reps_per_set_raw": "8",
+    "reps_per_set_estimated": 8,
+    "weight_raw": "1.1kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-30",
+    "body_part": "肱二头肌",
+    "exercise": "哑铃弯举",
+    "sets_raw": "5*2",
+    "sets_estimated": 10,
+    "reps_per_set_raw": "12",
+    "reps_per_set_estimated": 12,
+    "weight_raw": "2.5kg",
+    "notes": ""
+  },
+  {
+    "date": "2026-05-30",
+    "body_part": "肩部",
+    "exercise": "哑铃侧平举",
+    "sets_raw": "4*2",
+    "sets_estimated": 8,
+    "reps_per_set_raw": "20",
+    "reps_per_set_estimated": 20,
+    "weight_raw": "2.5kg",
     "notes": ""
   }
 ];
