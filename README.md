@@ -6,7 +6,7 @@ A standalone static site that brings exercise notes, the current training plan, 
 
 - `content/exercise-notes.md`: source file for the exercise library. Markdown `#` headings become categories, `##` headings become exercises, and `###` or deeper headings stay inside the exercise details.
 - `content/current-plan.md`: source file for the current training plan.
-- `data/training-log.csv`: source file for training history.
+- `content/training-log.csv`: source file for training history.
 - `media/`: exercise images, GIFs, and videos.
 
 The site reads generated files in `data/*.js`, which are created by `tools/rebuild.mjs`.
@@ -39,7 +39,7 @@ This project is configured with GitHub Actions. After a push to `main` or `maste
 
 1. Read `content/exercise-notes.md`
 2. Read `content/current-plan.md`
-3. Read `data/training-log.csv`
+3. Read `content/training-log.csv`
 4. Generate the data files used by the site
 5. Publish `dist/` to GitHub Pages
 

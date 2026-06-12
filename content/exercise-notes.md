@@ -45,7 +45,7 @@ tocBorder: true
 - 呼气：低头看向腹部，背部拱起，腹部收紧（猫式）
 - 两种姿势交替流动，重复至完成一组
 
-# 热身动作
+# 热身
 
 ## 肩部
 
@@ -719,41 +719,7 @@ tocBorder: true
 
 {{< figure src="https://haiyankong.github.io/workout-note/罗马椅负重侧腹.gif" width="500px" caption="罗马椅负重侧腹">}}
 
-# 臀腿
-
-## 概述
-
-- 髋部 / Hips：包含多种结构，不只是肌肉
-	- 臀肌 / Glutes
-	- 髋关节
-	- 髋屈肌群（如髂腰肌 / Iliopsoas）
-	- 关节囊、韧带、股骨头周围软组织
-- 臀肌 / Glutes
-	- 臀大肌 / Gluteus Maximus：主要负责髋部伸展、外旋
-	- 臀中肌 / Gluteus Medius：负责髋外展、稳定骨盆
-	- 臀小肌 / Gluteus Minimus：深层肌，协助臀中肌进行外展与稳定
-- 大腿肌肉 / Thighs
-	- 股四头肌或者大腿前侧 / Quadriceps：伸展膝盖，如深蹲起身、腿举等动作
-	- 股二头肌群或者大腿后侧 / Hamstrings：屈膝、伸髋，如硬拉、腿弯举
-	- 大腿内侧 / Adductors：大腿内收，如内收机、相扑深蹲等
-	- 大腿外侧 / Abductors：大腿外展，如侧抬腿、弹力带走路
-- 小腿肌肉
-	- 小腿前侧 / Tibialis Anterior：背屈脚踝（脚尖向上），控制落地缓冲
-	- 小腿后侧 / Calves
-		- 腓肠肌 / Gastrocnemius：参与爆发力动作（跳跃）
-		- 比目鱼肌 / Soleus：负责耐力、站立稳定
-
-| 部位        | 英文                 | chatGPT 推荐的训练动作                                       | 器械 / 方式                |
-| ------------------ | ---------------------- | ------------------------------------------------------------ | -------------------------- |
-| 臀大肌       | Gluteus Maximus        | 臀桥（Hip Thrust）  、罗马尼亚硬拉（Romanian Deadlift）、弓步蹲（Lunges） | 壶铃、杠铃、杠铃垫         |
-| 臀中/小肌    | Gluteus Medius/Minimus | 側抬腿（Side-Lying Leg Raise）、怪兽走（Monster Walk）、弹力带外展 | 弹力带、徒手               |
-| 髋屈肌       | Hip Flexors            | 抬腿（Leg Raise）、高抬腿跑（High Knees）                  | 徒手、拉力器               |
-| 股四头肌     | Quadriceps             | 深蹲（Squat）、腿举（Leg Press）、坐姿腿伸展（Leg Extension） | 史密斯机、腿举机、固定器械 |
-| 股二头肌群   | Hamstrings             | 罗马尼亚硬拉（RDL）、俯身腿弯举（Lying Leg Curl）          | 杠铃、腿弯举机             |
-| 大腿内侧肌   | Adductors              | 相扑深蹲（Sumo Squat）、内收训练器（Adductor Machine）     | 史密斯机、内收机           |
-| 大腿外侧肌   | Abductors              | 弹力带外展、侧抬腿、外展训练器（Abductor Machine）         | 弹力带、外展机             |
-| 小腿后侧肌群 | Calves                 | 踮脚提踵（Standing/Sitting Calf Raise）、跳绳              | 自重、提踵机、哑铃         |
-| 小腿前侧肌肉 | Tibialis Anterior      | 脚尖上提训练（Toe Raises）、负重背屈练习                   | 徒手、脚背拉力器           |
+# 臀腿 / Legs
 
 ## 深蹲 / Squat
 
@@ -1053,7 +1019,7 @@ tocBorder: true
 
 目的：提升全身力量和耐力，尤其强化肩膀、手臂、核心和心肺功能，促进爆发力和代谢率，提高运动表现和体能水平
 
-# 运动后拉伸
+# 拉伸
 
 ## 泡沫轴
 

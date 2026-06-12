@@ -17,8 +17,6 @@ const pathsToCopy = [
   "data/exercise-notes.js",
   "data/training-data.js",
   "data/current-plan.js",
-  "data/current-plan.md",
-  "data/training-log.csv",
   "media"
 ];
 

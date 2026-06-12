@@ -296,11 +296,6 @@ function parseCsv(text) {
   return rows;
 }
 
-function csvEscape(value) {
-  const text = value == null ? "" : String(value);
-  return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
-}
-
 function normalizeDate(value) {
   const text = String(value || "").trim();
   const zh = text.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
@@ -365,11 +360,6 @@ function normalizeTrainingLog(csvText) {
   });
 }
 
-function trainingCsv(rows) {
-  const headers = ["date", "body_part", "exercise", "sets_raw", "sets_estimated", "reps_per_set_raw", "reps_per_set_estimated", "weight_raw", "notes"];
-  return [headers.join(","), ...rows.map((row) => headers.map((header) => csvEscape(header === "date" ? row.csv_date || row.date : row[header])).join(","))].join("\r\n") + "\r\n";
-}
-
 function parsePlan(markdown) {
   const lines = markdown.split(/\r?\n/);
   const title = lines.find((line) => line.startsWith("# "))?.replace(/^#\s+/, "").trim() || "Current Plan";
@@ -388,10 +378,8 @@ await fs.writeFile(path.join(root, "data", "exercise-notes.js"), `window.EXERCIS
 const planMarkdown = await fs.readFile(path.join(root, "content", "current-plan.md"), "utf8");
 const currentPlan = parsePlan(planMarkdown);
 await fs.writeFile(path.join(root, "data", "current-plan.js"), `window.CURRENT_PLAN = ${JSON.stringify(currentPlan, null, 2)};\n`, "utf8");
-await fs.writeFile(path.join(root, "data", "current-plan.md"), planMarkdown, "utf8");
 
-const logRows = normalizeTrainingLog(await fs.readFile(path.join(root, "data", "training-log.csv"), "utf8"));
-await fs.writeFile(path.join(root, "data", "training-log.csv"), `\uFEFF${trainingCsv(logRows)}`, "utf8");
+const logRows = normalizeTrainingLog(await fs.readFile(path.join(root, "content", "training-log.csv"), "utf8"));
 await fs.writeFile(path.join(root, "data", "training-data.js"), `window.TRAINING_LOG = ${JSON.stringify(logRows, null, 2)};\n`, "utf8");
 
 console.log(`Rebuilt Workout: ${exerciseNotes.length} categories, ${exerciseNotes.reduce((sum, section) => sum + section.items.length, 0)} actions, ${logRows.length} training rows.`);
