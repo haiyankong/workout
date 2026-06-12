@@ -44,8 +44,7 @@ const elements = {
   exerciseTotal: $("#exerciseTotal"),
   visibleRows: $("#visibleRows"),
   logRows: $("#logRows"),
-  emptyState: $("#emptyState"),
-  copyrightYear: $("#copyrightYear")
+  emptyState: $("#emptyState")
 };
 
 const numberFormat = new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 1 });
@@ -679,4 +678,3 @@ renderPlan();
 renderCalendar();
 populateHistoryFilters();
 renderHistory();
-elements.copyrightYear.textContent = new Date().getFullYear();
